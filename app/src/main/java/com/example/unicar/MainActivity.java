@@ -28,12 +28,17 @@ public class MainActivity extends AppCompatActivity {
 
         logoSplash = findViewById(R.id.logo_splash);
 
+        //animationSplash();
+
+        // Teste de Layout
+        Intent i = new Intent(MainActivity.this, HistoryActivity.class);
+        startActivity(i);
+    }
+
+    public void animationSplash(){
         Animation animationSplash = AnimationUtils.loadAnimation(this, R.anim.splash_animation);
 
         logoSplash.startAnimation(animationSplash);
-
-        //Intent it = new Intent(MainActivity.this, LoginActivity.class);
-        //startActivity(it);
 
         new Handler().postDelayed(new Runnable(){
             @Override

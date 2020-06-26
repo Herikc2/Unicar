@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginTop="0dp"
-            android:layout_marginLeft="@dimen/loginMarginLeft">
+            android:layout_marginLeft="@dimen/LoginLayoutMarginLeft">
 
             <ImageView
                 android:id="@+id/login_logo"
@@ -30,30 +30,34 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/user_login"
-                android:textSize="15sp"
+                android:textSize="@dimen/LoginTextViewSize"
                 android:layout_marginTop="100dp"
                 android:layout_marginLeft="5dp"
+                android:textStyle="bold"
                 android:textColor="@color/black"/>
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/login_codigo"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="@dimen/LoginTextInputFieldSize"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:hint="000-00000"
-                android:textColorHint="@color/loginEditBG"
+                android:textColorHint="@color/LoginTextInputHintBG"
                 app:boxBackgroundColor="#d3d3d3"
                 app:boxStrokeColor="@color/black"
                 app:boxStrokeWidthFocused="2dp"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="@dimen/LoginTextInputMarginLeft"
                 app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
-                app:hintTextColor="@color/loginEditBG">
+                app:hintTextColor="@color/LoginTextInputHintBG">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/login_codigo_edit"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/black"
+                    android:padding="@dimen/LoginTextInputEditPaddingField"
                     android:inputType="number"
-                    android:textSize="15sp">
+                    android:textSize="@dimen/LoginTextInputEditSize">
 
                 </com.google.android.material.textfield.TextInputEditText>
 
@@ -63,31 +67,34 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/senha"
-                android:textSize="15sp"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/LoginTextViewSize"
+                android:layout_marginTop="@dimen/LoginTextViewMarginTop"
+                android:layout_marginLeft="@dimen/LoginTextViewMarginLeft"
                 android:textColor="@color/black"/>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/login_senha"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginLeft="5dp"
+                android:layout_height="@dimen/LoginTextInputFieldSize"
+                android:layout_marginLeft="@dimen/LoginTextInputMarginLeft"
                 android:hint="XXXXXXXX"
-                android:textColorHint="@color/loginEditBG"
+                android:textColorHint="@color/LoginTextInputHintBG"
                 app:boxBackgroundColor="#d3d3d3"
                 app:boxStrokeColor="@color/black"
                 app:boxStrokeWidthFocused="2dp"
                 app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
-                app:hintTextColor="@color/loginEditBG"
+                app:hintTextColor="@color/LoginTextInputHintBG"
                 app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/login_senha_edit"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:inputType="textPassword"
                     android:textColor="@color/black"
+                    android:padding="0dp"
                     android:textSize="15sp">
 
                 </com.google.android.material.textfield.TextInputEditText>
@@ -101,22 +108,25 @@
                 android:layout_marginTop="55dp">
 
                 <Button
-                    android:layout_width="150dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/LoginWidthButton"
+                    android:layout_height="@dimen/LoginHeightButton"
                     android:background="@drawable/button"
                     android:text="Login"
                     android:layout_marginLeft="5dp"
-                    android:textColor="@color/buttonLogin"
-                    android:textSize="20sp"/>
+                    android:textColor="@color/ButtonLogin"
+                    android:textSize="@dimen/LoginTextSizeButton"
+                    android:textAllCaps="false"/>
 
                 <Button
-                    android:layout_width="150dp"
-                    android:layout_height="30dp"
+                    android:id="@+id/login_cadastro_button"
+                    android:layout_width="@dimen/LoginWidthButton"
+                    android:layout_height="@dimen/LoginHeightButton"
                     android:background="@drawable/button"
                     android:text="Cadastro"
                     android:layout_marginLeft="45dp"
-                    android:textColor="@color/buttonLogin"
-                    android:textSize="20sp"/>
+                    android:textColor="@color/ButtonLogin"
+                    android:textSize="@dimen/LoginTextSizeButton"
+                    android:textAllCaps="false"/>
 
             </LinearLayout>
             
