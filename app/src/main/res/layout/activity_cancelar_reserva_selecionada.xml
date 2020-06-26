@@ -9,11 +9,11 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="10">
+        android:layout_weight="1">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingLeft="20dp"
             android:paddingRight="20dp">
@@ -23,27 +23,29 @@
                 android:layout_width="53dp"
                 android:layout_height="46dp"
                 android:layout_gravity="left"
+                android:layout_marginTop="20dp"
                 app:srcCompat="?attr/actionModeCloseDrawable" />
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
                 android:layout_marginBottom="30dp"
                 android:text="Dom 23 março"
                 android:textSize="36sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="229dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="76dp"
+                    android:layout_width="60dp"
                     android:layout_height="match_parent"
+                    android:layout_weight="0"
                     android:orientation="vertical"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp">
+                    android:paddingTop="40dp">
 
                     <TextView
                         android:id="@+id/textView11"
@@ -56,32 +58,32 @@
                         android:id="@+id/textView10"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="45dp"
+                        android:layout_marginTop="85dp"
                         android:text="12:00"
                         android:textSize="20sp" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="30dp"
+                    android:layout_width="35dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0"
+                    android:gravity="center_horizontal|top"
                     android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imageView2"
-                        android:layout_width="18dp"
-                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="182dp"
                         android:layout_weight="0"
-                        app:srcCompat="?android:attr/fastScrollThumbDrawable" />
+                        app:srcCompat="@drawable/mapway" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="240dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
                     android:orientation="vertical"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp">
+                    android:paddingTop="40dp">
 
                     <TextView
                         android:id="@+id/textView16"
@@ -101,7 +103,7 @@
                         android:id="@+id/textView14"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="30dp"
+                        android:layout_marginTop="70dp"
                         android:text="Rua XXX 1200"
                         android:textSize="20sp" />
 
@@ -139,26 +141,23 @@
                     android:layout_width="166dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="_______________________" />
+                    android:text="____________________"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/textView17"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="R$ 20" />
+                    android:text="R$ 20"
+                    android:textSize="18sp" />
             </LinearLayout>
-
-            <TextView
-                android:id="@+id/textView20"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
 
             <View
                 android:id="@+id/divider"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:layout_marginTop="10dp"
                 android:background="?android:attr/listDivider" />
 
             <LinearLayout
@@ -172,7 +171,7 @@
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_weight="0"
-                    app:srcCompat="@drawable/ic_launcher_foreground" />
+                    app:srcCompat="@drawable/avatar1" />
 
                 <LinearLayout
                     android:layout_width="278dp"
@@ -180,8 +179,8 @@
                     android:layout_marginRight="10dp"
                     android:layout_weight="0"
                     android:orientation="vertical"
+                    android:paddingLeft="15dp"
                     android:paddingTop="5dp"
-                    android:paddingRight="50dp"
                     android:paddingBottom="5dp">
 
                     <TextView
@@ -190,7 +189,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10dp"
                         android:layout_weight="1"
-                        android:text="Moises Silva"
+                        android:text="Lucas Silva"
                         android:textSize="20dp" />
 
                     <TextView
@@ -199,7 +198,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10dp"
                         android:layout_weight="1"
-                        android:text="5/5" />
+                        android:text="5/5 ★" />
                 </LinearLayout>
 
                 <ImageView
@@ -207,7 +206,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="0"
-                    app:srcCompat="?attr/homeAsUpIndicator" />
+                    app:srcCompat="@drawable/toright" />
 
             </LinearLayout>
 
@@ -215,63 +214,120 @@
                 android:id="@+id/textView21"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:text="E ai galera, me chamo Moises e estou cursando gastronomia no momento. Faço essa rota toda semana, espero conhecer gente nova aqui (:" />
 
             <TextView
                 android:id="@+id/textView22"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:text="Entrar em contato com Moises" />
 
             <View
                 android:id="@+id/divider2"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="?android:attr/listDivider" />
-
-            <TextView
-                android:id="@+id/textView23"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Sem animais por favor" />
-
-            <TextView
-                android:id="@+id/textView24"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="2 no banco de tras" />
-
-            <TextView
-                android:id="@+id/textView25"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Adoro conversar" />
-
-            <View
-                android:id="@+id/divider3"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
                 android:background="?android:attr/listDivider" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    app:srcCompat="@drawable/nopet" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Sem animais por favor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    app:srcCompat="@drawable/people" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="2 no banco de tras" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    app:srcCompat="@drawable/dtalk" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Adoro conversar" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_width="322dp"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical">
 
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="VW GOL"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="vermelho" />
                 </LinearLayout>
 
                 <ImageView
                     android:id="@+id/imageView6"
-                    android:layout_width="match_parent"
+                    android:layout_width="50dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="5"
-                    app:srcCompat="@android:drawable/btn_dialog" />
+                    app:srcCompat="@drawable/car" />
 
             </LinearLayout>
 
@@ -279,22 +335,38 @@
                 android:id="@+id/divider4"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 android:background="?android:attr/listDivider" />
 
             <TextView
                 android:id="@+id/textView28"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:layout_marginBottom="20dp"
+                android:text="Reportar carona" />
 
         </LinearLayout>
     </ScrollView>
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Button" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#3F51B5"
+            android:text="Cancelar"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>
