@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Login and SignUp -->
+    <dimen name="LoginLayoutMarginLeft">25dp</dimen>
+
+    <dimen name="LoginTextInputFieldSize">40dp</dimen>
+    <dimen name="LoginTextInputEditSize">14.5sp</dimen>
+    <dimen name="LoginTextInputMarginLeft">5dp</dimen>
+    <dimen name="LoginTextInputEditPaddingField">0dp</dimen>
+
+    <dimen name="LoginTextSizeButton">20sp</dimen>
+    <dimen name="LoginWidthButton">150dp</dimen>
+    <dimen name="LoginHeightButton">30dp</dimen>
+
+    <dimen name="LoginTextViewSize">13sp</dimen>
+    <dimen name="LoginTextViewMarginTop">15dp</dimen>
+    <dimen name="LoginTextViewMarginLeft">5dp</dimen>
+
+    <!-- History -->
+    <dimen name="HistoryCardViewWidth">350dp</dimen>
+    <dimen name="HistoryCardViewHeight">180dp</dimen>
+
+    <dimen name="HistoryMapWayWidth">21dp</dimen>
+    <dimen name="HistoryMapWayHeight">80dp</dimen>
+
+    <dimen name="HistoryCardViewElevation">6dp</dimen>
+    <dimen name="HistoryCardViewRadius">20dp</dimen>
+    <dimen name="HistoryCardViewMarginTop">30dp</dimen>
+    <dimen name="HistoryCardViewMarginBottom">15dp</dimen>
+
+    <dimen name="HistoryCardViewTextHourSize">18sp</dimen>
+    <dimen name="HistoryCardViewTextHourMarginLeft">18dp</dimen>
+    <dimen name="HistoryCardViewTextHourMarginTop">10dp</dimen>
+
+    <dimen name="HistoryCardViewImageMapWidth">20dp</dimen>
+    <dimen name="HistoryCardViewImageMapHeight">80dp</dimen>
+    <dimen name="HistoryCardViewImageMapMarginTop">10dp</dimen>
+    <dimen name="HistoryCardViewImageMapMarginLeft">15dp</dimen>
+
+    <dimen name="HistoryCardViewPointAMarginLeft">25dp</dimen>
+    <dimen name="HistoryCardViewPointAMarginTop">8dp</dimen>
+    <dimen name="HistoryCardViewPointTextSize">14sp</dimen>
+    <dimen name="HistoryCardViewPointBMarginTop">40dp</dimen>
+</resources>
