@@ -1,589 +1,600 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HistoryActivity"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF"
+    android:orientation="vertical">
 
-    <LinearLayout
+    <ImageView
+        android:id="@+id/history_back_button"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left"
+
+        app:srcCompat="?attr/homeAsUpIndicator"
+        android:tint="#5571b1"/>
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <ImageView
-            android:id="@+id/history_back_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="left"
-            android:layout_marginLeft="10dp"
-            app:srcCompat="?attr/homeAsUpIndicator"
-            android:tint="#5571b1"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="28dp"
-            android:text="Histórico"
-            android:textColor="#000000"
-            android:textSize="40sp"
-            android:textStyle="bold"/>
-
-        <androidx.cardview.widget.CardView
-        android:layout_width="@dimen/HistoryCardViewWidth"
-        android:layout_height="@dimen/HistoryCardViewHeight"
-        android:layout_gravity="center"
-        app:cardElevation="@dimen/HistoryCardViewElevation"
-        app:cardCornerRadius="@dimen/HistoryCardViewRadius"
-        app:cardBackgroundColor="@color/HistoryCardViewColor"
-        android:layout_marginTop="@dimen/HistoryCardViewMarginTop"
-        android:layout_marginBottom="@dimen/HistoryCardViewMarginBottom">
+        android:background="#FFFFFF">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/HistoryCardViewTextHourMarginLeft"
-                android:layout_marginTop="@dimen/HistoryCardViewTextHourMarginTop"
-                android:text="07:00, Sáb 30 mai"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="28dp"
+                android:text="Histórico"
                 android:textColor="#000000"
-                android:textSize="@dimen/HistoryCardViewTextHourSize"
-                android:textStyle="bold" />
+                android:textSize="40sp"
+                android:textStyle="bold"/>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="@dimen/HistoryCardViewImageMapWidth"
-                    android:layout_height="@dimen/HistoryCardViewImageMapHeight"
-                    android:src="@drawable/mapway2"
-                    android:layout_marginTop="@dimen/HistoryCardViewImageMapMarginTop"
-                    android:layout_marginLeft="@dimen/HistoryCardViewImageMapMarginLeft"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/HistoryCardViewWidth"
+                android:layout_height="@dimen/HistoryCardViewHeight"
+                android:layout_gravity="center"
+                app:cardElevation="@dimen/HistoryCardViewElevation"
+                app:cardCornerRadius="@dimen/HistoryCardViewRadius"
+                app:cardBackgroundColor="@color/HistoryCardViewColor"
+                android:layout_marginTop="@dimen/HistoryCardViewMarginTop"
+                android:layout_marginBottom="@dimen/HistoryCardViewMarginBottom">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="200dp"
-                        android:layout_height="25dp"
-                        android:layout_marginLeft="@dimen/HistoryCardViewPointAMarginLeft"
-                        android:layout_marginTop="@dimen/HistoryCardViewPointAMarginTop"
-                        android:text="Urupema"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/HistoryCardViewTextHourMarginLeft"
+                        android:layout_marginTop="@dimen/HistoryCardViewTextHourMarginTop"
+                        android:text="07:00, Sáb 30 mai"
                         android:textColor="#000000"
-                        android:textSize="@dimen/HistoryCardViewPointTextSize"
+                        android:textSize="@dimen/HistoryCardViewTextHourSize"
                         android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="200dp"
-                        android:layout_height="25dp"
-                        android:layout_marginLeft="@dimen/HistoryCardViewPointAMarginLeft"
-                        android:layout_marginTop="@dimen/HistoryCardViewPointBMarginTop"
-                        android:text="São José"
-                        android:textColor="#000000"
-                        android:textSize="@dimen/HistoryCardViewPointTextSize"
-                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/HistoryCardViewImageMapWidth"
+                            android:layout_height="@dimen/HistoryCardViewImageMapHeight"
+                            android:src="@drawable/mapway2"
+                            android:layout_marginTop="@dimen/HistoryCardViewImageMapMarginTop"
+                            android:layout_marginLeft="@dimen/HistoryCardViewImageMapMarginLeft"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/HistoryCardViewPointAMarginLeft"
+                                android:layout_marginTop="@dimen/HistoryCardViewPointAMarginTop"
+                                android:text="Urupema"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/HistoryCardViewPointTextSize"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/HistoryCardViewPointAMarginLeft"
+                                android:layout_marginTop="@dimen/HistoryCardViewPointBMarginTop"
+                                android:text="São José"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/HistoryCardViewPointTextSize"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/cancel_simbol_small"
+                            android:layout_marginLeft="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="Cancelada"
+                            android:textColor="#808080"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
                 </LinearLayout>
 
+            </androidx.cardview.widget.CardView>
 
-            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/HistoryCardViewWidth"
+                android:layout_height="@dimen/HistoryCardViewHeight"
+                android:layout_gravity="center"
+                app:cardElevation="@dimen/HistoryCardViewElevation"
+                app:cardCornerRadius="@dimen/HistoryCardViewRadius"
+                app:cardBackgroundColor="@color/HistoryCardViewColor"
+                android:layout_marginTop="@dimen/HistoryCardViewMarginTop"
+                android:layout_marginBottom="@dimen/HistoryCardViewMarginBottom">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/cancel_simbol_small"
-                    android:layout_marginLeft="10dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:text="Cancelada"
-                    android:textColor="#808080"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/HistoryCardViewTextHourMarginLeft"
+                        android:layout_marginTop="@dimen/HistoryCardViewTextHourMarginTop"
+                        android:text="08:00, Seg 22 mar"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/HistoryCardViewTextHourSize"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/HistoryCardViewImageMapWidth"
+                            android:layout_height="@dimen/HistoryCardViewImageMapHeight"
+                            android:src="@drawable/mapway2"
+                            android:layout_marginTop="@dimen/HistoryCardViewImageMapMarginTop"
+                            android:layout_marginLeft="@dimen/HistoryCardViewImageMapMarginLeft"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/HistoryCardViewPointAMarginLeft"
+                                android:layout_marginTop="@dimen/HistoryCardViewPointAMarginTop"
+                                android:text="Balneário Camboriú"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/HistoryCardViewPointTextSize"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/HistoryCardViewPointAMarginLeft"
+                                android:layout_marginTop="@dimen/HistoryCardViewPointBMarginTop"
+                                android:text="Urubici"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/HistoryCardViewPointTextSize"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/cancel_simbol_small"
+                            android:layout_marginLeft="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="Cancelada"
+                            android:textColor="#808080"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/HistoryCardViewWidth"
+                android:layout_height="@dimen/HistoryCardViewHeight"
+                android:layout_gravity="center"
+                app:cardElevation="@dimen/HistoryCardViewElevation"
+                app:cardCornerRadius="@dimen/HistoryCardViewRadius"
+                app:cardBackgroundColor="@color/HistoryCardViewColor"
+                android:layout_marginTop="@dimen/HistoryCardViewMarginTop"
+                android:layout_marginBottom="@dimen/HistoryCardViewMarginBottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/HistoryCardViewTextHourMarginLeft"
+                        android:layout_marginTop="@dimen/HistoryCardViewTextHourMarginTop"
+                        android:text="20:00, Dom 25 jan"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/HistoryCardViewTextHourSize"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/HistoryCardViewImageMapWidth"
+                            android:layout_height="@dimen/HistoryCardViewImageMapHeight"
+                            android:src="@drawable/mapway2"
+                            android:layout_marginTop="@dimen/HistoryCardViewImageMapMarginTop"
+                            android:layout_marginLeft="@dimen/HistoryCardViewImageMapMarginLeft"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/HistoryCardViewPointAMarginLeft"
+                                android:layout_marginTop="@dimen/HistoryCardViewPointAMarginTop"
+                                android:text="Curitiba"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/HistoryCardViewPointTextSize"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/HistoryCardViewPointAMarginLeft"
+                                android:layout_marginTop="@dimen/HistoryCardViewPointBMarginTop"
+                                android:text="Lajes"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/HistoryCardViewPointTextSize"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/avatar1"
+                            android:layout_marginLeft="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="Moisés Silva"
+                            android:textColor="#808080"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/HistoryCardViewWidth"
+                android:layout_height="@dimen/HistoryCardViewHeight"
+                android:layout_gravity="center"
+                app:cardElevation="@dimen/HistoryCardViewElevation"
+                app:cardCornerRadius="@dimen/HistoryCardViewRadius"
+                app:cardBackgroundColor="@color/HistoryCardViewColor"
+                android:layout_marginTop="@dimen/HistoryCardViewMarginTop"
+                android:layout_marginBottom="@dimen/HistoryCardViewMarginBottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/HistoryCardViewTextHourMarginLeft"
+                        android:layout_marginTop="@dimen/HistoryCardViewTextHourMarginTop"
+                        android:text="07:00, Sáb 30 mai"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/HistoryCardViewTextHourSize"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/HistoryCardViewImageMapWidth"
+                            android:layout_height="@dimen/HistoryCardViewImageMapHeight"
+                            android:src="@drawable/mapway2"
+                            android:layout_marginTop="@dimen/HistoryCardViewImageMapMarginTop"
+                            android:layout_marginLeft="@dimen/HistoryCardViewImageMapMarginLeft"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/HistoryCardViewPointAMarginLeft"
+                                android:layout_marginTop="@dimen/HistoryCardViewPointAMarginTop"
+                                android:text="Urupema"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/HistoryCardViewPointTextSize"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/HistoryCardViewPointAMarginLeft"
+                                android:layout_marginTop="@dimen/HistoryCardViewPointBMarginTop"
+                                android:text="São José"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/HistoryCardViewPointTextSize"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/cancel_simbol_small"
+                            android:layout_marginLeft="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="Cancelada"
+                            android:textColor="#808080"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/HistoryCardViewWidth"
+                android:layout_height="@dimen/HistoryCardViewHeight"
+                android:layout_gravity="center"
+                app:cardElevation="@dimen/HistoryCardViewElevation"
+                app:cardCornerRadius="@dimen/HistoryCardViewRadius"
+                app:cardBackgroundColor="@color/HistoryCardViewColor"
+                android:layout_marginTop="@dimen/HistoryCardViewMarginTop"
+                android:layout_marginBottom="@dimen/HistoryCardViewMarginBottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/HistoryCardViewTextHourMarginLeft"
+                        android:layout_marginTop="@dimen/HistoryCardViewTextHourMarginTop"
+                        android:text="07:00, Sáb 30 mai"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/HistoryCardViewTextHourSize"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/HistoryCardViewImageMapWidth"
+                            android:layout_height="@dimen/HistoryCardViewImageMapHeight"
+                            android:src="@drawable/mapway2"
+                            android:layout_marginTop="@dimen/HistoryCardViewImageMapMarginTop"
+                            android:layout_marginLeft="@dimen/HistoryCardViewImageMapMarginLeft"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/HistoryCardViewPointAMarginLeft"
+                                android:layout_marginTop="@dimen/HistoryCardViewPointAMarginTop"
+                                android:text="Urupema"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/HistoryCardViewPointTextSize"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/HistoryCardViewPointAMarginLeft"
+                                android:layout_marginTop="@dimen/HistoryCardViewPointBMarginTop"
+                                android:text="São José"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/HistoryCardViewPointTextSize"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/cancel_simbol_small"
+                            android:layout_marginLeft="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="Cancelada"
+                            android:textColor="#808080"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/HistoryCardViewWidth"
+                android:layout_height="@dimen/HistoryCardViewHeight"
+                android:layout_gravity="center"
+                app:cardElevation="@dimen/HistoryCardViewElevation"
+                app:cardCornerRadius="@dimen/HistoryCardViewRadius"
+                app:cardBackgroundColor="@color/HistoryCardViewColor"
+                android:layout_marginTop="@dimen/HistoryCardViewMarginTop"
+                android:layout_marginBottom="@dimen/HistoryCardViewMarginBottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/HistoryCardViewTextHourMarginLeft"
+                        android:layout_marginTop="@dimen/HistoryCardViewTextHourMarginTop"
+                        android:text="07:00, Sáb 30 mai"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/HistoryCardViewTextHourSize"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/HistoryCardViewImageMapWidth"
+                            android:layout_height="@dimen/HistoryCardViewImageMapHeight"
+                            android:src="@drawable/mapway2"
+                            android:layout_marginTop="@dimen/HistoryCardViewImageMapMarginTop"
+                            android:layout_marginLeft="@dimen/HistoryCardViewImageMapMarginLeft"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/HistoryCardViewPointAMarginLeft"
+                                android:layout_marginTop="@dimen/HistoryCardViewPointAMarginTop"
+                                android:text="Urupema"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/HistoryCardViewPointTextSize"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/HistoryCardViewPointAMarginLeft"
+                                android:layout_marginTop="@dimen/HistoryCardViewPointBMarginTop"
+                                android:text="São José"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/HistoryCardViewPointTextSize"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/cancel_simbol_small"
+                            android:layout_marginLeft="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="Cancelada"
+                            android:textColor="#808080"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
 
-    </androidx.cardview.widget.CardView>
+    </ScrollView>
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="@dimen/HistoryCardViewWidth"
-            android:layout_height="@dimen/HistoryCardViewHeight"
-            android:layout_gravity="center"
-            app:cardElevation="@dimen/HistoryCardViewElevation"
-            app:cardCornerRadius="@dimen/HistoryCardViewRadius"
-            app:cardBackgroundColor="@color/HistoryCardViewColor"
-            android:layout_marginTop="@dimen/HistoryCardViewMarginTop"
-            android:layout_marginBottom="@dimen/HistoryCardViewMarginBottom">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/HistoryCardViewTextHourMarginLeft"
-                    android:layout_marginTop="@dimen/HistoryCardViewTextHourMarginTop"
-                    android:text="08:00, Seg 22 mar"
-                    android:textColor="#000000"
-                    android:textSize="@dimen/HistoryCardViewTextHourSize"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="@dimen/HistoryCardViewImageMapWidth"
-                        android:layout_height="@dimen/HistoryCardViewImageMapHeight"
-                        android:src="@drawable/mapway2"
-                        android:layout_marginTop="@dimen/HistoryCardViewImageMapMarginTop"
-                        android:layout_marginLeft="@dimen/HistoryCardViewImageMapMarginLeft"/>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="200dp"
-                            android:layout_height="25dp"
-                            android:layout_marginLeft="@dimen/HistoryCardViewPointAMarginLeft"
-                            android:layout_marginTop="@dimen/HistoryCardViewPointAMarginTop"
-                            android:text="Balneário Camboriú"
-                            android:textColor="#000000"
-                            android:textSize="@dimen/HistoryCardViewPointTextSize"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="200dp"
-                            android:layout_height="25dp"
-                            android:layout_marginLeft="@dimen/HistoryCardViewPointAMarginLeft"
-                            android:layout_marginTop="@dimen/HistoryCardViewPointBMarginTop"
-                            android:text="Urubici"
-                            android:textColor="#000000"
-                            android:textSize="@dimen/HistoryCardViewPointTextSize"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/cancel_simbol_small"
-                        android:layout_marginLeft="10dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="10dp"
-                        android:text="Cancelada"
-                        android:textColor="#808080"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="@dimen/HistoryCardViewWidth"
-            android:layout_height="@dimen/HistoryCardViewHeight"
-            android:layout_gravity="center"
-            app:cardElevation="@dimen/HistoryCardViewElevation"
-            app:cardCornerRadius="@dimen/HistoryCardViewRadius"
-            app:cardBackgroundColor="@color/HistoryCardViewColor"
-            android:layout_marginTop="@dimen/HistoryCardViewMarginTop"
-            android:layout_marginBottom="@dimen/HistoryCardViewMarginBottom">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/HistoryCardViewTextHourMarginLeft"
-                    android:layout_marginTop="@dimen/HistoryCardViewTextHourMarginTop"
-                    android:text="20:00, Dom 25 jan"
-                    android:textColor="#000000"
-                    android:textSize="@dimen/HistoryCardViewTextHourSize"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="@dimen/HistoryCardViewImageMapWidth"
-                        android:layout_height="@dimen/HistoryCardViewImageMapHeight"
-                        android:src="@drawable/mapway2"
-                        android:layout_marginTop="@dimen/HistoryCardViewImageMapMarginTop"
-                        android:layout_marginLeft="@dimen/HistoryCardViewImageMapMarginLeft"/>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="200dp"
-                            android:layout_height="25dp"
-                            android:layout_marginLeft="@dimen/HistoryCardViewPointAMarginLeft"
-                            android:layout_marginTop="@dimen/HistoryCardViewPointAMarginTop"
-                            android:text="Curitiba"
-                            android:textColor="#000000"
-                            android:textSize="@dimen/HistoryCardViewPointTextSize"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="200dp"
-                            android:layout_height="25dp"
-                            android:layout_marginLeft="@dimen/HistoryCardViewPointAMarginLeft"
-                            android:layout_marginTop="@dimen/HistoryCardViewPointBMarginTop"
-                            android:text="Lajes"
-                            android:textColor="#000000"
-                            android:textSize="@dimen/HistoryCardViewPointTextSize"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/avatar1"
-                        android:layout_marginLeft="10dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="10dp"
-                        android:text="Moisés Silva"
-                        android:textColor="#808080"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="@dimen/HistoryCardViewWidth"
-            android:layout_height="@dimen/HistoryCardViewHeight"
-            android:layout_gravity="center"
-            app:cardElevation="@dimen/HistoryCardViewElevation"
-            app:cardCornerRadius="@dimen/HistoryCardViewRadius"
-            app:cardBackgroundColor="@color/HistoryCardViewColor"
-            android:layout_marginTop="@dimen/HistoryCardViewMarginTop"
-            android:layout_marginBottom="@dimen/HistoryCardViewMarginBottom">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/HistoryCardViewTextHourMarginLeft"
-                    android:layout_marginTop="@dimen/HistoryCardViewTextHourMarginTop"
-                    android:text="07:00, Sáb 30 mai"
-                    android:textColor="#000000"
-                    android:textSize="@dimen/HistoryCardViewTextHourSize"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="@dimen/HistoryCardViewImageMapWidth"
-                        android:layout_height="@dimen/HistoryCardViewImageMapHeight"
-                        android:src="@drawable/mapway2"
-                        android:layout_marginTop="@dimen/HistoryCardViewImageMapMarginTop"
-                        android:layout_marginLeft="@dimen/HistoryCardViewImageMapMarginLeft"/>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="200dp"
-                            android:layout_height="25dp"
-                            android:layout_marginLeft="@dimen/HistoryCardViewPointAMarginLeft"
-                            android:layout_marginTop="@dimen/HistoryCardViewPointAMarginTop"
-                            android:text="Urupema"
-                            android:textColor="#000000"
-                            android:textSize="@dimen/HistoryCardViewPointTextSize"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="200dp"
-                            android:layout_height="25dp"
-                            android:layout_marginLeft="@dimen/HistoryCardViewPointAMarginLeft"
-                            android:layout_marginTop="@dimen/HistoryCardViewPointBMarginTop"
-                            android:text="São José"
-                            android:textColor="#000000"
-                            android:textSize="@dimen/HistoryCardViewPointTextSize"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/cancel_simbol_small"
-                        android:layout_marginLeft="10dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="10dp"
-                        android:text="Cancelada"
-                        android:textColor="#808080"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="@dimen/HistoryCardViewWidth"
-            android:layout_height="@dimen/HistoryCardViewHeight"
-            android:layout_gravity="center"
-            app:cardElevation="@dimen/HistoryCardViewElevation"
-            app:cardCornerRadius="@dimen/HistoryCardViewRadius"
-            app:cardBackgroundColor="@color/HistoryCardViewColor"
-            android:layout_marginTop="@dimen/HistoryCardViewMarginTop"
-            android:layout_marginBottom="@dimen/HistoryCardViewMarginBottom">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/HistoryCardViewTextHourMarginLeft"
-                    android:layout_marginTop="@dimen/HistoryCardViewTextHourMarginTop"
-                    android:text="07:00, Sáb 30 mai"
-                    android:textColor="#000000"
-                    android:textSize="@dimen/HistoryCardViewTextHourSize"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="@dimen/HistoryCardViewImageMapWidth"
-                        android:layout_height="@dimen/HistoryCardViewImageMapHeight"
-                        android:src="@drawable/mapway2"
-                        android:layout_marginTop="@dimen/HistoryCardViewImageMapMarginTop"
-                        android:layout_marginLeft="@dimen/HistoryCardViewImageMapMarginLeft"/>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="200dp"
-                            android:layout_height="25dp"
-                            android:layout_marginLeft="@dimen/HistoryCardViewPointAMarginLeft"
-                            android:layout_marginTop="@dimen/HistoryCardViewPointAMarginTop"
-                            android:text="Urupema"
-                            android:textColor="#000000"
-                            android:textSize="@dimen/HistoryCardViewPointTextSize"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="200dp"
-                            android:layout_height="25dp"
-                            android:layout_marginLeft="@dimen/HistoryCardViewPointAMarginLeft"
-                            android:layout_marginTop="@dimen/HistoryCardViewPointBMarginTop"
-                            android:text="São José"
-                            android:textColor="#000000"
-                            android:textSize="@dimen/HistoryCardViewPointTextSize"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/cancel_simbol_small"
-                        android:layout_marginLeft="10dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="10dp"
-                        android:text="Cancelada"
-                        android:textColor="#808080"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="@dimen/HistoryCardViewWidth"
-            android:layout_height="@dimen/HistoryCardViewHeight"
-            android:layout_gravity="center"
-            app:cardElevation="@dimen/HistoryCardViewElevation"
-            app:cardCornerRadius="@dimen/HistoryCardViewRadius"
-            app:cardBackgroundColor="@color/HistoryCardViewColor"
-            android:layout_marginTop="@dimen/HistoryCardViewMarginTop"
-            android:layout_marginBottom="@dimen/HistoryCardViewMarginBottom">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/HistoryCardViewTextHourMarginLeft"
-                    android:layout_marginTop="@dimen/HistoryCardViewTextHourMarginTop"
-                    android:text="07:00, Sáb 30 mai"
-                    android:textColor="#000000"
-                    android:textSize="@dimen/HistoryCardViewTextHourSize"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="@dimen/HistoryCardViewImageMapWidth"
-                        android:layout_height="@dimen/HistoryCardViewImageMapHeight"
-                        android:src="@drawable/mapway2"
-                        android:layout_marginTop="@dimen/HistoryCardViewImageMapMarginTop"
-                        android:layout_marginLeft="@dimen/HistoryCardViewImageMapMarginLeft"/>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="200dp"
-                            android:layout_height="25dp"
-                            android:layout_marginLeft="@dimen/HistoryCardViewPointAMarginLeft"
-                            android:layout_marginTop="@dimen/HistoryCardViewPointAMarginTop"
-                            android:text="Urupema"
-                            android:textColor="#000000"
-                            android:textSize="@dimen/HistoryCardViewPointTextSize"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="200dp"
-                            android:layout_height="25dp"
-                            android:layout_marginLeft="@dimen/HistoryCardViewPointAMarginLeft"
-                            android:layout_marginTop="@dimen/HistoryCardViewPointBMarginTop"
-                            android:text="São José"
-                            android:textColor="#000000"
-                            android:textSize="@dimen/HistoryCardViewPointTextSize"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/cancel_simbol_small"
-                        android:layout_marginLeft="10dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="10dp"
-                        android:text="Cancelada"
-                        android:textColor="#808080"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-    </LinearLayout>
-
-</ScrollView>
+</LinearLayout>

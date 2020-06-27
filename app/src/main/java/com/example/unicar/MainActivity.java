@@ -12,12 +12,16 @@ import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 public class MainActivity extends AppCompatActivity {
 
+    private LinearLayout mListLayout;
+
     private ImageView logoSplash;
 
-    private static final int SPLASH_TIMEOUT = 3000;
+    private static final int SPLASH_TIMEOUT = 1000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,12 +31,13 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         logoSplash = findViewById(R.id.logo_splash);
+        mListLayout = findViewById(R.id.splash);
 
-        //animationSplash();
+        animationSplash();
 
         // Teste de Layout
-        Intent i = new Intent(MainActivity.this, HistoryActivity.class);
-        startActivity(i);
+        /*Intent i = new Intent(MainActivity.this, HistoryActivity.class);
+        startActivity(i);*/
     }
 
     public void animationSplash(){
@@ -44,7 +49,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run(){
                 Intent i = new Intent(MainActivity.this,LoginActivity.class);
-                startActivity(i);
+
+                Pair pair = new Pair<View, String>(logoSplash, "imageLogoSplashTransition");
+                ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this, pair);
+
+                startActivity(i, options.toBundle());
                 finish();
             }
         },SPLASH_TIMEOUT);

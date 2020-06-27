@@ -24,9 +24,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="160dp"
-                android:src="@drawable/logo_unicar_no_bg"/>
+                android:src="@drawable/logo_unicar_no_bg"
+                android:transitionName="imageLogoSplashTransition"/>
 
             <TextView
+                android:id="@+id/text_code"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/user_login"
@@ -34,7 +36,8 @@
                 android:layout_marginTop="100dp"
                 android:layout_marginLeft="5dp"
                 android:textStyle="bold"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:transitionName="textCodeTransition"/>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/login_codigo"
@@ -48,7 +51,8 @@
                 app:boxStrokeWidthFocused="2dp"
                 android:layout_marginLeft="@dimen/LoginTextInputMarginLeft"
                 app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
-                app:hintTextColor="@color/LoginTextInputHintBG">
+                app:hintTextColor="@color/LoginTextInputHintBG"
+                android:transitionName="CodeTransition">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/login_codigo_edit"
@@ -64,6 +68,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
+                android:id="@+id/text_pass"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/senha"
@@ -71,7 +76,8 @@
                 android:textSize="@dimen/LoginTextViewSize"
                 android:layout_marginTop="@dimen/LoginTextViewMarginTop"
                 android:layout_marginLeft="@dimen/LoginTextViewMarginLeft"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:transitionName="textPassTransition"/>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/login_senha"
@@ -86,7 +92,8 @@
                 app:boxStrokeWidthFocused="2dp"
                 app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
                 app:hintTextColor="@color/LoginTextInputHintBG"
-                app:passwordToggleEnabled="true">
+                app:passwordToggleEnabled="true"
+                android:transitionName="PassTransition">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/login_senha_edit"
