@@ -33,11 +33,12 @@ public class MainActivity extends AppCompatActivity {
         logoSplash = findViewById(R.id.logo_splash);
         mListLayout = findViewById(R.id.splash);
 
-        //animationSplash();
+        // Comentar animação abaixo para testes
+        animationSplash();
 
-        // Teste de Layout
-        Intent i = new Intent(MainActivity.this, UserChooseHourActivity.class);
-        startActivity(i);
+        // Descomentar para Teste de Layout
+        /*Intent i = new Intent(MainActivity.this, ResetPasswordActivity.class);
+        startActivity(i);*/
     }
 
     public void animationSplash(){
@@ -57,5 +58,10 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         },SPLASH_TIMEOUT);
+    }
+
+    @Override
+    public void onBackPressed() {
+        this.moveTaskToBack(true);
     }
 }

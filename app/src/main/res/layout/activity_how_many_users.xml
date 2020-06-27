@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserChooseHourActivity"
+    tools:context=".HowManyUsersActivity"
     android:orientation="vertical">
 
     <fragment
@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:layout="@layout/fragment_top_bar_back" />
-    
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,10 +22,18 @@
         android:textColor="#000"
         android:textStyle="bold"
         android:textSize="28sp"
-        android:text="Que horas vai\nbuscar a galera?"/>
+        android:text="Quantos cabem de boa?"/>
 
-    <Button
-        android:id="@+id/button_time"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="#7F868C"
+        android:textSize="14sp"
+        android:text="*Não exprema os coleguinhas (:"/>
+
+    <Spinner
+        android:id="@+id/spinner_how_many_users"
         android:layout_width="120dp"
         android:layout_height="@dimen/LoginTextInputFieldSize"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -35,10 +43,6 @@
         app:boxStrokeWidthFocused="0dp"
         app:boxStrokeWidth="0dp"
         android:layout_marginTop="30dp"
-        android:onClick="showTimePickerDialog"
-        android:textColor="#8C9298"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:text="08:00"/>
+        android:entries="@array/how_many_users_array"/>
 
 </LinearLayout>

@@ -71,4 +71,9 @@ public class LoginActivity extends AppCompatActivity {
         textCode = findViewById(R.id.text_code);
         textPass = findViewById(R.id.text_pass);
     }
+
+    @Override
+    public void onBackPressed() {
+        this.moveTaskToBack(true);
+    }
 }

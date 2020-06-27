@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UserChooseHourActivity"></activity>
+        <activity android:name=".ResetPasswordActivity"></activity>
+        <activity android:name=".MessageToUserActivity" />
+        <activity android:name=".AcceptValueActivity" />
+        <activity android:name=".WantChargeActivity" />
+        <activity android:name=".HowManyUsersActivity" />
+        <activity android:name=".UserChooseHourActivity" />
         <activity android:name=".HistoryActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".LoginActivity" />

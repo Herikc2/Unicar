@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessageToUserActivity"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.example.unicar.TopBarBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_top_bar_back" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:text="Fique a vontade para\ndeixar uma mensagem (:"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/HistoryCardViewWidth"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardElevation="@dimen/HistoryCardViewElevation"
+        app:cardCornerRadius="@dimen/HistoryCardViewRadius"
+        app:cardBackgroundColor="#EBEBEB"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="@dimen/HistoryCardViewMarginBottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/HistoryCardViewTextHourMarginLeft"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="como você é?\na viagem é tranquila?\nsuas experiências?\nsobre o que gosta de conversar?
+                \naquele rango favorito?\nseu feed do youtube?\no último filme do Tarantino"
+                android:textColor="#9A9FA4"
+                android:textSize="16.5sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="175dp"
+        android:layout_height="@dimen/LoginHeightButton"
+        android:layout_gravity="center"
+        android:background="@drawable/button"
+        android:text="Oferecer carona"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/ButtonLogin"
+        android:textSize="@dimen/LoginTextSizeButton"
+        android:textAllCaps="false"
+        android:backgroundTint="#2E519F"/>
+
+</LinearLayout>

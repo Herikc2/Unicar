@@ -42,4 +42,20 @@
     <dimen name="HistoryCardViewPointAMarginTop">8dp</dimen>
     <dimen name="HistoryCardViewPointTextSize">14sp</dimen>
     <dimen name="HistoryCardViewPointBMarginTop">40dp</dimen>
+
+    <dimen name="WantChargeHeightButton">35dp</dimen>
+    <dimen name="WantChargeWidthButton">82dp</dimen>
+
+    <dimen name="AcceptValueSizeImage">35dp</dimen>
+    <dimen name="AcceptValueMarginTop">0dp</dimen>
+    <dimen name="AcceptValueMarginRightLeft">15dp</dimen>
+
+    <dimen name="ResetPassFieldWidth">350dp</dimen>
+    <dimen name="ResetPassFieldHeight">50dp</dimen>
+    <dimen name="ResetPassFieldMarginLeft">5dp</dimen>
+    <dimen name="ResetPassFieldStrokeFocusedSize">0dp</dimen>
+    <dimen name="ResetPassFieldStrokeSize">0dp</dimen>
+    <dimen name="ResetPassEditPadding">0dp</dimen>
+    <dimen name="ResetPassEditTextSize" type="dimen" format="float">14.5sp</dimen>
+    <dimen name="ResetPassFildMarginTop">15dp</dimen>
 </resources>
