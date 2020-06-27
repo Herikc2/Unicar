@@ -33,11 +33,11 @@ public class MainActivity extends AppCompatActivity {
         logoSplash = findViewById(R.id.logo_splash);
         mListLayout = findViewById(R.id.splash);
 
-        animationSplash();
+        //animationSplash();
 
         // Teste de Layout
-        /*Intent i = new Intent(MainActivity.this, HistoryActivity.class);
-        startActivity(i);*/
+        Intent i = new Intent(MainActivity.this, UserChooseHourActivity.class);
+        startActivity(i);
     }
 
     public void animationSplash(){
