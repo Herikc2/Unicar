@@ -61,7 +61,8 @@
                     android:padding="@dimen/LoginTextInputEditPaddingField"
                     android:inputType="number"
                     android:maxLength="10"
-                    android:textSize="@dimen/LoginTextInputEditSize">
+                    android:textSize="@dimen/LoginTextInputEditSize"
+                    android:textCursorDrawable="@drawable/cursor_edit_text">
 
                 </com.google.android.material.textfield.TextInputEditText>
 
@@ -99,7 +100,8 @@
                     android:padding="@dimen/LoginTextInputEditPaddingField"
                     android:inputType="text"
                     android:maxLength="50"
-                    android:textSize="@dimen/LoginTextInputEditSize">
+                    android:textSize="@dimen/LoginTextInputEditSize"
+                    android:textCursorDrawable="@drawable/cursor_edit_text">
 
                 </com.google.android.material.textfield.TextInputEditText>
 
@@ -137,7 +139,8 @@
                     android:padding="@dimen/LoginTextInputEditPaddingField"
                     android:inputType="textEmailAddress"
                     android:maxLength="75"
-                    android:textSize="@dimen/LoginTextInputEditSize">
+                    android:textSize="@dimen/LoginTextInputEditSize"
+                    android:textCursorDrawable="@drawable/cursor_edit_text">
 
                 </com.google.android.material.textfield.TextInputEditText>
 
@@ -175,7 +178,8 @@
                     android:padding="@dimen/LoginTextInputEditPaddingField"
                     android:inputType="number"
                     android:maxLength="14"
-                    android:textSize="@dimen/LoginTextInputEditSize">
+                    android:textSize="@dimen/LoginTextInputEditSize"
+                    android:textCursorDrawable="@drawable/cursor_edit_text">
 
                 </com.google.android.material.textfield.TextInputEditText>
 
@@ -216,7 +220,8 @@
                     android:maxLength="75"
                     android:textColor="@color/black"
                     android:padding="@dimen/LoginTextInputEditPaddingField"
-                    android:textSize="@dimen/LoginTextInputEditSize">
+                    android:textSize="@dimen/LoginTextInputEditSize"
+                    android:textCursorDrawable="@drawable/cursor_edit_text">
 
                 </com.google.android.material.textfield.TextInputEditText>
 
@@ -255,7 +260,8 @@
                     android:maxLength="75"
                     android:textColor="@color/black"
                     android:padding="@dimen/LoginTextInputEditPaddingField"
-                    android:textSize="@dimen/LoginTextInputEditSize">
+                    android:textSize="@dimen/LoginTextInputEditSize"
+                    android:textCursorDrawable="@drawable/cursor_edit_text">
 
                 </com.google.android.material.textfield.TextInputEditText>
 
@@ -272,7 +278,7 @@
                     android:id="@+id/sign_up_button"
                     android:layout_width="@dimen/LoginWidthButton"
                     android:layout_height="@dimen/LoginHeightButton"
-                    android:background="@drawable/button"
+                    android:background="@drawable/button_effect"
                     android:text="Cadastrar"
                     android:gravity="center"
                     android:textColor="@color/ButtonLogin"

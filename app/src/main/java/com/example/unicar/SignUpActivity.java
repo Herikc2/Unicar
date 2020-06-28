@@ -88,21 +88,25 @@ public class SignUpActivity extends AppCompatActivity {
         boolean ver = true;
         if(SignCodigoEdit.getText() == null) {
             ver = false;
+            SignCodigoText.setHintEnabled(false);
             SignCodigoText.setErrorEnabled(true);
             SignCodigoText.setError("Necessário preencher o campo");
         }
         if(SignEmailEdit.getText() == null) {
             ver = false;
+            SignEmailText.setHintEnabled(false);
             SignEmailText.setErrorEnabled(true);
             SignEmailText.setError("Necessário preencher o campo");
         }
         if(SignNomeEdit.getText() == null) {
             ver = false;
+            SignNomeText.setHintEnabled(false);
             SignNomeText.setErrorEnabled(true);
             SignNomeText.setError("Necessário preencher o campo");
         }
         if(SignNumeroEdit.getText() == null) {
             ver = false;
+            SignNumeroText.setHintEnabled(false);
             SignNumeroText.setErrorEnabled(true);
             SignNumeroText.setError("Necessário preencher o campo");
         }
@@ -113,37 +117,44 @@ public class SignUpActivity extends AppCompatActivity {
         }
         if(SignConfirmarSenhaEdit.getText() == null) {
             ver = false;
+            SignConfirmarSenhaText.setHintEnabled(false);
             SignConfirmarSenhaText.setErrorEnabled(true);
             SignConfirmarSenhaText.setError("Necessário preencher o campo");
         }
 
         if(SignCodigoEdit.getText().toString().trim().equals("")) {
             ver = false;
+            SignCodigoText.setHintEnabled(false);
             SignCodigoText.setErrorEnabled(true);
             SignCodigoText.setError("Necessário preencher o campo");
         }
         if(SignEmailEdit.getText().toString().trim().equals("")) {
             ver = false;
+            SignEmailText.setHintEnabled(false);
             SignEmailText.setErrorEnabled(true);
             SignEmailText.setError("Necessário preencher o campo");
         }
         if(SignNomeEdit.getText().toString().trim().equals("")) {
             ver = false;
+            SignNomeText.setHintEnabled(false);
             SignNomeText.setErrorEnabled(true);
             SignNomeText.setError("Necessário preencher o campo");
         }
         if(SignNumeroEdit.getText().toString().trim().equals("")) {
             ver = false;
+            SignNumeroText.setHintEnabled(false);
             SignNumeroText.setErrorEnabled(true);
             SignNumeroText.setError("Necessário preencher o campo");
         }
         if(SignSenhaEdit.getText().toString().trim().equals("")) {
             ver = false;
+            SignSenhaText.setHintEnabled(false);
             SignSenhaText.setErrorEnabled(true);
             SignSenhaText.setError("Necessário preencher o campo");
         }
         if(SignConfirmarSenhaEdit.getText().toString().trim().equals("")) {
             ver = false;
+            SignConfirmarSenhaText.setHintEnabled(false);
             SignConfirmarSenhaText.setErrorEnabled(true);
             SignConfirmarSenhaText.setError("Necessário preencher o campo");
         }

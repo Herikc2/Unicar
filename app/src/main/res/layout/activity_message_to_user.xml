@@ -59,13 +59,12 @@
         android:layout_width="175dp"
         android:layout_height="@dimen/LoginHeightButton"
         android:layout_gravity="center"
-        android:background="@drawable/button"
+        android:background="@drawable/button_blue_effect"
         android:text="Oferecer carona"
         android:layout_marginTop="50dp"
         android:layout_marginLeft="5dp"
         android:textColor="@color/ButtonLogin"
         android:textSize="@dimen/LoginTextSizeButton"
-        android:textAllCaps="false"
-        android:backgroundTint="#2E519F"/>
+        android:textAllCaps="false"/>
 
 </LinearLayout>

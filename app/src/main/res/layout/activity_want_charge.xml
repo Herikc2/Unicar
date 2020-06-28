@@ -34,23 +34,21 @@
         <Button
             android:layout_width="@dimen/WantChargeWidthButton"
             android:layout_height="@dimen/WantChargeHeightButton"
-            android:background="@drawable/button"
+            android:background="@drawable/button_d0_effect"
             android:text="Sim"
             android:textColor="@color/ButtonLogin"
             android:textSize="@dimen/LoginTextSizeButton"
-            android:textAllCaps="false"
-            android:backgroundTint="#D0D0D0"/>
+            android:textAllCaps="false" />
 
         <Button
             android:layout_width="@dimen/WantChargeWidthButton"
             android:layout_height="@dimen/WantChargeHeightButton"
-            android:background="@drawable/button"
+            android:background="@drawable/button_blue_effect"
             android:text="Não"
             android:layout_marginLeft="50dp"
             android:textColor="@color/ButtonLogin"
             android:textSize="@dimen/LoginTextSizeButton"
-            android:textAllCaps="false"
-            android:backgroundTint="#2E519F"/>
+            android:textAllCaps="false"/>
 
     </LinearLayout>
 

@@ -115,21 +115,25 @@ public class LoginActivity extends AppCompatActivity {
         boolean ver = true;
         if(LoginCodigoEdit.getText() == null) {
             ver = false;
+            LoginCodigoText.setHintEnabled(false);
             LoginCodigoText.setErrorEnabled(true);
             LoginCodigoText.setError("Necessário preencher o campo");
         }
         if(LoginSenhaEdit.getText() == null) {
             ver = false;
+            LoginSenhaText.setHintEnabled(false);
             LoginSenhaText.setErrorEnabled(true);
             LoginSenhaText.setError("Necessário preencher o campo");
         }
         if(LoginCodigoEdit.getText().toString().trim().equals("")) {
             ver = false;
+            LoginCodigoText.setHintEnabled(false);
             LoginCodigoText.setErrorEnabled(true);
             LoginCodigoText.setError("Necessário preencher o campo");
         }
         if(LoginSenhaEdit.getText().toString().trim().equals("")) {
             ver = false;
+            LoginSenhaText.setHintEnabled(false);
             LoginSenhaText.setErrorEnabled(true);
             LoginSenhaText.setError("Necessário preencher o campo");
         }

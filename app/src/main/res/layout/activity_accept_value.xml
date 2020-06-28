@@ -35,7 +35,7 @@
             android:id="@+id/sub_button"
             android:layout_width="@dimen/AcceptValueSizeImage"
             android:layout_height="@dimen/AcceptValueSizeImage"
-            android:src="@drawable/subtrair_completo"
+            android:src="@drawable/minus_effect"
             android:layout_marginTop="@dimen/AcceptValueMarginTop"
             android:layout_marginRight="@dimen/AcceptValueMarginRightLeft"
             android:onClick="subMoney"/>
@@ -60,7 +60,7 @@
             android:id="@+id/add_button"
             android:layout_width="@dimen/AcceptValueSizeImage"
             android:layout_height="@dimen/AcceptValueSizeImage"
-            android:src="@drawable/soma_completo"
+            android:src="@drawable/plus_effect"
             android:layout_marginTop="@dimen/AcceptValueMarginTop"
             android:layout_marginLeft="@dimen/AcceptValueMarginRightLeft"
             android:onClick="addMoney"/>

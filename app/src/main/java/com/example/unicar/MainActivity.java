@@ -34,11 +34,11 @@ public class MainActivity extends AppCompatActivity {
         mListLayout = findViewById(R.id.splash);
 
         // Comentar animação abaixo para testes
-        animationSplash();
+        //animationSplash();
 
         // Descomentar para Teste de Layout
-        /*Intent i = new Intent(MainActivity.this, ResetPasswordActivity.class);
-        startActivity(i);*/
+        Intent i = new Intent(MainActivity.this, LoginActivity.class);
+        startActivity(i);
     }
 
     public void animationSplash(){
