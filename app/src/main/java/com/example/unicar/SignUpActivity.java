@@ -72,9 +72,18 @@ public class SignUpActivity extends AppCompatActivity {
             user.setNumero(SignNumeroEdit.getText().toString());
             user.setSenha(SignSenhaEdit.getText().toString());
 
-            if(new PostHttpService(g.toJson(user)).execute().get().equals("true")){
-                Intent i = new Intent(SignUpActivity.this, HistoryActivity.class);
-                startActivity(i);
+            Usuario user_verify = new GetHttpService(user.getCodigo_aluno()).execute().get();
+
+            if(user_verify == null) {
+                if (new PostHttpService(g.toJson(user)).execute().get().equals("true")) {
+                    Intent i =  new Intent(SignUpActivity.this, HistoryActivity.class);
+                    startActivity(i);
+                    Toast.makeText(getApplicationContext(), "Cadastrado com Sucesso", Toast.LENGTH_LONG).show();
+                    SignUpActivity.this.finish();
+                }
+            }else {
+                Toast.makeText(getApplicationContext(), "Já possui aluno cadastro com esse código", Toast.LENGTH_LONG).show();
+                return;
             }
 
         } catch (ExecutionException e) {
