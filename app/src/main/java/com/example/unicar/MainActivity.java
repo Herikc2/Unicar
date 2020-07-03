@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this, pair);
 
                 startActivity(i, options.toBundle());
+                MainActivity.this.finish();
                 finish();
             }
         },SPLASH_TIMEOUT);

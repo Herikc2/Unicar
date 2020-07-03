@@ -34,6 +34,8 @@ public class LoginActivity extends AppCompatActivity {
     Button cadastroButton;
     Button loginButton;
 
+    public static String cod_user;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -99,8 +101,12 @@ public class LoginActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Usuario ou senha incorretos", Toast.LENGTH_SHORT).show();
             else
                 if(user.getSenha().equals(LoginSenhaEdit.getText().toString())){
+                    cod_user = LoginCodigoEdit.getText().toString();
                     Intent i = new Intent(LoginActivity.this, HistoryActivity.class);
                     startActivity(i);
+                }else{
+                    Toast.makeText(getApplicationContext(), "Usuario ou senha incorretos", Toast.LENGTH_SHORT).show();
+                    return;
                 }
 
 

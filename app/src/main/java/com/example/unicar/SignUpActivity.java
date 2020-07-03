@@ -59,6 +59,12 @@ public class SignUpActivity extends AppCompatActivity {
 
         if(!SignSenhaEdit.getText().toString().equals(SignConfirmarSenhaEdit.getText().toString())) {
             Toast.makeText(getApplicationContext(), "As senhas informadas são diferentes", Toast.LENGTH_LONG).show();
+            SignSenhaText.setHintEnabled(false);
+            SignSenhaText.setErrorEnabled(true);
+            SignSenhaText.setError("Senha invalida");
+            SignConfirmarSenhaText.setHintEnabled(false);
+            SignConfirmarSenhaText.setErrorEnabled(true);
+            SignConfirmarSenhaText.setError("Senha invalida");
             return;
         }
 
@@ -121,6 +127,7 @@ public class SignUpActivity extends AppCompatActivity {
         }
         if(SignSenhaEdit.getText() == null) {
             ver = false;
+            SignSenhaText.setHintEnabled(false);
             SignSenhaText.setErrorEnabled(true);
             SignSenhaText.setError("Necessário preencher o campo");
         }

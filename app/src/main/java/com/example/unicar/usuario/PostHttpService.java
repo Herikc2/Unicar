@@ -3,6 +3,7 @@ package com.example.unicar.usuario;
 import android.os.AsyncTask;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.PrintStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -38,10 +39,23 @@ public class PostHttpService extends AsyncTask<Void, Void, String> {
             connection.setConnectTimeout(5000);
             connection.connect();
 
-            //jsonDeResposta = new Scanner(connection.getInputStream()).next();
-            //Scanner scanner = new Scanner(url.openStream());
+            // Capture the error in HTTP
+            /*
+            // Get the response code
+            int statusCode = connection.getResponseCode();
+
+            InputStream is = null;
+
+            if (statusCode >= 200 && statusCode < 400) {
+                // Create an InputStream in order to extract the response object
+                is = connection.getInputStream();
+            }
+            else {
+                is = connection.getErrorStream();
+            }*/
+
+            jsonDeResposta = new Scanner(connection.getInputStream()).next();
             connection.disconnect();
-            return "true";
         } catch (MalformedURLException e) {
             e.printStackTrace();
         } catch (IOException e) {
