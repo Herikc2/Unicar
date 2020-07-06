@@ -24,9 +24,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="160dp"
-                android:src="@drawable/logo_unicar_no_bg"/>
+                android:src="@drawable/logo_unicar_no_bg"
+                android:transitionName="imageLogoSplashTransition"/>
 
             <TextView
+                android:id="@+id/text_code"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/user_login"
@@ -34,7 +36,8 @@
                 android:layout_marginTop="100dp"
                 android:layout_marginLeft="5dp"
                 android:textStyle="bold"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:transitionName="textCodeTransition"/>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/login_codigo"
@@ -48,7 +51,8 @@
                 app:boxStrokeWidthFocused="2dp"
                 android:layout_marginLeft="@dimen/LoginTextInputMarginLeft"
                 app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
-                app:hintTextColor="@color/LoginTextInputHintBG">
+                app:hintTextColor="@color/LoginTextInputHintBG"
+                android:transitionName="CodeTransition">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/login_codigo_edit"
@@ -57,13 +61,16 @@
                     android:textColor="@color/black"
                     android:padding="@dimen/LoginTextInputEditPaddingField"
                     android:inputType="number"
-                    android:textSize="@dimen/LoginTextInputEditSize">
+                    android:maxLength="10"
+                    android:textSize="@dimen/LoginTextInputEditSize"
+                    android:textCursorDrawable="@drawable/cursor_edit_text">
 
                 </com.google.android.material.textfield.TextInputEditText>
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
+                android:id="@+id/text_pass"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/senha"
@@ -71,7 +78,8 @@
                 android:textSize="@dimen/LoginTextViewSize"
                 android:layout_marginTop="@dimen/LoginTextViewMarginTop"
                 android:layout_marginLeft="@dimen/LoginTextViewMarginLeft"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:transitionName="textPassTransition"/>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/login_senha"
@@ -86,17 +94,19 @@
                 app:boxStrokeWidthFocused="2dp"
                 app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
                 app:hintTextColor="@color/LoginTextInputHintBG"
-                app:passwordToggleEnabled="true">
+                app:passwordToggleEnabled="true"
+                android:transitionName="PassTransition">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/login_senha_edit"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:inputType="textPassword"
+                    android:maxLength="75"
                     android:textColor="@color/black"
                     android:padding="0dp"
-                    android:textSize="15sp">
-
+                    android:textSize="15sp"
+                    android:textCursorDrawable="@drawable/cursor_edit_text">
                 </com.google.android.material.textfield.TextInputEditText>
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -108,9 +118,10 @@
                 android:layout_marginTop="55dp">
 
                 <Button
+                    android:id="@+id/login_button"
                     android:layout_width="@dimen/LoginWidthButton"
                     android:layout_height="@dimen/LoginHeightButton"
-                    android:background="@drawable/button"
+                    android:background="@drawable/button_effect"
                     android:text="Login"
                     android:layout_marginLeft="5dp"
                     android:textColor="@color/ButtonLogin"
@@ -121,7 +132,7 @@
                     android:id="@+id/login_cadastro_button"
                     android:layout_width="@dimen/LoginWidthButton"
                     android:layout_height="@dimen/LoginHeightButton"
-                    android:background="@drawable/button"
+                    android:background="@drawable/button_effect"
                     android:text="Cadastro"
                     android:layout_marginLeft="45dp"
                     android:textColor="@color/ButtonLogin"

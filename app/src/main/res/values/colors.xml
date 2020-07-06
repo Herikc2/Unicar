@@ -8,4 +8,6 @@
     <color name="ButtonLogin">#FFFFFF</color>
     <color name="LoginTextInputHintBG">#808080</color>
     <color name="HistoryCardViewColor">#FFF</color>
+    <color name="ResetPassFieldColor">#EBEBEB</color>
+    <color name="ResetPassEditColor">#000000</color>
 </resources>
