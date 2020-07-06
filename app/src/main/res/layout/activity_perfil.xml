@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
@@ -307,10 +308,11 @@
         </LinearLayout>
     </ScrollView>
 
-    <include
-        layout="@layout/bottom_bar"
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.example.unicar.BottomBar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_bottom_bar" />
 
 </LinearLayout>
