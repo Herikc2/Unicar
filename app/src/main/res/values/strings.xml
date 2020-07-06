@@ -9,6 +9,14 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="when">Quando?</string>
+    <string name="profile">Perfil</string>
+    <string name="information">Informações</string>
+    <string name="data">Dados</string>
+    <string name="about">Sobre</string>
+    <string name="confirmed_doc">Documentação confirmada</string>
+    <string name="car">Carro</string>
+    <string name="add_car">Adicionar carro</string>
 
     <string-array name="how_many_users_array">
         <item>1</item>

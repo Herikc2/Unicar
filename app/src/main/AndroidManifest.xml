@@ -21,6 +21,14 @@
         <activity android:name=".HistoryActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".LoginActivity" />
+        <activity android:name=".activities.SelectDateActivity" />
+        <activity android:name=".activities.CancelSelectedRideActivity" />
+        <activity android:name=".activities.ProfileActivity" />
+        <activity android:name=".activities.RatingActivity" />
+        <activity android:name=".activities.ReserveSelectedRide" />
+        <activity android:name=".activities.SeeProfileActivity" />
+        <activity android:name=".activities.ShowTravelsSelectedWayActivity" />
+
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
