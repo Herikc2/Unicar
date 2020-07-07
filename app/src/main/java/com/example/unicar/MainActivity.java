@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         //animationSplash();
 
         // Descomentar para Teste de Layout
-        Intent i = new Intent(MainActivity.this, LeavingWhere.class);
+        Intent i = new Intent(MainActivity.this, MainMenu.class);
         startActivity(i);
     }
 
