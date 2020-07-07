@@ -17,7 +17,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginBottom="20dp"
-            android:onClick="back"
+            android:onClick="backGoingWhere"
             app:srcCompat="@drawable/close" />
 
         <TextView

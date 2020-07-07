@@ -50,7 +50,7 @@
             android:layout_marginTop="130dp"
             android:background="@drawable/button_blue_effect"
             android:text="Procurar"
-            android:onClick="next"
+            android:onClick="nextUserChooseHour"
             android:textAllCaps="false"
             android:textColor="@color/ButtonLogin"
             android:textSize="@dimen/LoginTextSizeButton" />

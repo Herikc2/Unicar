@@ -27,7 +27,7 @@
                 android:layout_height="46dp"
                 android:layout_gravity="left"
                 android:layout_marginTop="20dp"
-                android:onClick="back"
+                android:onClick="backGoingWhere"
                 app:srcCompat="?attr/actionModeCloseDrawable" />
 
             <TextView
@@ -367,7 +367,7 @@
             android:text="Cancelar"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
-            android:onClick="back"
+            android:onClick="backGoingWhere"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

@@ -17,7 +17,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginBottom="20dp"
-            android:onClick="back"
+            android:onClick="backGoingWhere"
             app:srcCompat="@drawable/close" />
 
         <TextView
@@ -29,7 +29,7 @@
             android:textSize="28sp" />
 
         <CalendarView
-            android:id="@+id/calendarView"
+            android:id="@+id/calendarViewWhen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
@@ -37,13 +37,13 @@
             android:weekDayTextAppearance="@style/TextAppearance.AppCompat.Body1" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnSelectDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:backgroundTint="#3F51B5"
             android:gravity="center"
-            android:onClick="next"
+            android:onClick="nextUserChooseHour"
             android:text="Selecionar"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"

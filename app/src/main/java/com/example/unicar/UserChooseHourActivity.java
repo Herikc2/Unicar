@@ -46,6 +46,7 @@ public class UserChooseHourActivity extends AppCompatActivity {
 
                 button_time.setText(timeString);
                 Intent i = new Intent(UserChooseHourActivity.this, HowManyUsersActivity.class);
+                i.putExtra("time", timeString);
                 startActivity(i);
             }
         }, hour, minute, true);

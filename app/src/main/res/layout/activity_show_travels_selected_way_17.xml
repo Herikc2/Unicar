@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:onClick="back"
+            android:onClick="backGoingWhere"
             android:padding="20dp"
             app:cardBackgroundColor="#EAEAEA"
             app:cardCornerRadius="10dp">
@@ -36,7 +36,7 @@
                     android:layout_width="20dp"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
-                    android:onClick="back"
+                    android:onClick="backGoingWhere"
                     app:srcCompat="?attr/actionModeCloseDrawable" />
 
                 <LinearLayout
@@ -100,7 +100,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="20dp"
-            android:onClick="next"
+            android:onClick="nextUserChooseHour"
             app:cardCornerRadius="20dp"
             app:contentPadding="20dp">
 
@@ -262,7 +262,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="20dp"
-            android:onClick="next"
+            android:onClick="nextUserChooseHour"
             app:cardCornerRadius="20dp"
             app:contentPadding="20dp">
 
@@ -424,7 +424,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="20dp"
-            android:onClick="next"
+            android:onClick="nextUserChooseHour"
             app:cardCornerRadius="20dp"
             app:contentPadding="20dp">
 

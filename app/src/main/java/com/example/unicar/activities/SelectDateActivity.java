@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.CalendarView;
 
-import com.example.unicar.MainActivity;
 import com.example.unicar.R;
 import com.example.unicar.UserChooseHourActivity;
 
@@ -20,15 +19,16 @@ public class SelectDateActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_date_20);
 
-        calendar = findViewById(R.id.calendarView);
+        calendar = findViewById(R.id.calendarViewWhen);
     }
 
-    public void next(View v){
+    public void nextUserChooseHour(View v){
         Intent i = new Intent(SelectDateActivity.this, UserChooseHourActivity.class);
+        i.putExtra("date", calendar.getDate());
         startActivity(i);
     }
 
-    public void back(View v){
+    public void backGoingWhere(View v){
         Intent i = new Intent(SelectDateActivity.this, GoingWhere.class);
         startActivity(i);
     }

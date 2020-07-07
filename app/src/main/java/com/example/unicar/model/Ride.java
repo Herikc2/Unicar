@@ -14,6 +14,10 @@ public class Ride {
     private double cost;
     private String message;
 
+    public Ride() {
+
+    }
+
     public Ride(Address start, Address destination, Date date, int seatAmt, boolean paid, double cost, String message) {
         this.start = start;
         this.destination = destination;

@@ -27,7 +27,7 @@
                 android:layout_height="46dp"
                 android:layout_gravity="left"
                 android:layout_marginTop="20dp"
-                android:onClick="back"
+                android:onClick="backGoingWhere"
                 app:srcCompat="?attr/actionModeCloseDrawable" />
 
             <TextView
@@ -168,7 +168,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="10dp"
-                android:onClick="next"
+                android:onClick="nextUserChooseHour"
                 android:orientation="horizontal">
 
                 <ImageView
