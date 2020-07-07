@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.unicar.HowManyUsersActivity;
+import com.example.unicar.MainActivity;
 import com.example.unicar.R;
 
 public class HowManyPassengers extends AppCompatActivity {
@@ -15,5 +16,10 @@ public class HowManyPassengers extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_whos_with);
+    }
+
+    public void next(View view) {
+        Intent i = new Intent(HowManyPassengers.this, Location.class);
+        startActivity(i);
     }
 }
