@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageView logoSplash;
 
     private static final int SPLASH_TIMEOUT = 1000;
-    public static final String ip = "192.168.0.103";
+    public static final String ip = "dbservermtsqltest.ddns.net";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,11 +36,11 @@ public class MainActivity extends AppCompatActivity {
         mListLayout = findViewById(R.id.splash);
 
         // Comentar animação abaixo para testes
-        //animationSplash();
+        animationSplash();
 
         // Descomentar para Teste de Layout
-        Intent i = new Intent(MainActivity.this, UserChooseHourActivity.class);
-        startActivity(i);
+        //Intent i = new Intent(MainActivity.this, LoginActivity.class);
+        //startActivity(i);
     }
 
     public void animationSplash(){
@@ -67,4 +67,5 @@ public class MainActivity extends AppCompatActivity {
     public void onBackPressed() {
         this.moveTaskToBack(true);
     }
+
 }

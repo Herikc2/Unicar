@@ -1,6 +1,8 @@
 package com.example.unicar.model;
 
 public class Address {
+
+    private String id;
     private String street;
     private String number;
 
@@ -23,5 +25,13 @@ public class Address {
 
     public void setNumber(String number) {
         this.number = number;
+    }
+
+    public String getID() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }
