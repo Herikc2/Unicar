@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    tools:context=".activities.ReserveSelectedRide"
+    tools:context=".activities.ReserveSelectedRideActivity"
     app:layout_constraintTop_toTopOf="parent">
 
     <ScrollView

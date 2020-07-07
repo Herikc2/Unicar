@@ -9,6 +9,7 @@ import android.widget.CalendarView;
 
 import com.example.unicar.MainActivity;
 import com.example.unicar.R;
+import com.example.unicar.UserChooseHourActivity;
 
 public class SelectDateActivity extends AppCompatActivity {
 
@@ -23,12 +24,12 @@ public class SelectDateActivity extends AppCompatActivity {
     }
 
     public void next(View v){
-        Intent i = new Intent(SelectDateActivity.this, MainActivity.class);
+        Intent i = new Intent(SelectDateActivity.this, UserChooseHourActivity.class);
         startActivity(i);
     }
 
     public void back(View v){
-        Intent i = new Intent(SelectDateActivity.this, MainActivity.class);
+        Intent i = new Intent(SelectDateActivity.this, GoingWhere.class);
         startActivity(i);
     }
 

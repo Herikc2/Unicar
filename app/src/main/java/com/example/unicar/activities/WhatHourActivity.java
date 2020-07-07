@@ -8,21 +8,21 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.unicar.R;
 
-public class SeeProfileActivity extends AppCompatActivity {
+public class WhatHourActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_see_profile_22);
+        setContentView(R.layout.activity_what_hour);
     }
 
     public void next(View v){
-        Intent i = new Intent(SeeProfileActivity.this, RatingActivity.class);
+        Intent i = new Intent(WhatHourActivity.this, Location.class);
         startActivity(i);
     }
 
     public void back(View v){
-        Intent i = new Intent(SeeProfileActivity.this, ReserveSelectedRideActivity.class);
+        Intent i = new Intent(WhatHourActivity.this, SelectDateActivity.class);
         startActivity(i);
     }
 

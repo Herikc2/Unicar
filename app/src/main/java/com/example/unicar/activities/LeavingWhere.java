@@ -18,7 +18,7 @@ public class LeavingWhere extends AppCompatActivity {
     }
 
     public void history(View view) {
-        Intent i = new Intent(LeavingWhere.this, Location.class);
+        Intent i = new Intent(LeavingWhere.this, GoingWhere.class);
         startActivity(i);
     }
 }

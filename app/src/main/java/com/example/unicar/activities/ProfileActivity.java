@@ -18,13 +18,11 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
     public void next(View v){
-        Intent i = new Intent(ProfileActivity.this, MainActivity.class);
-        startActivity(i);
+
     }
 
     public void back(View v){
-        Intent i = new Intent(ProfileActivity.this, MainActivity.class);
-        startActivity(i);
+
     }
 
 }

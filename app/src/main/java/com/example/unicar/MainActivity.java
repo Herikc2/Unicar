@@ -14,16 +14,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.example.unicar.activities.CancelReservationActivity;
-import com.example.unicar.activities.CancelSelectedRideActivity;
-import com.example.unicar.activities.GoingWhere;
-import com.example.unicar.activities.HowManyPassengers;
-import com.example.unicar.activities.LeavingWhere;
 import com.example.unicar.activities.MainMenu;
-import com.example.unicar.activities.ProfileActivity;
-import com.example.unicar.activities.Reservation;
-import com.example.unicar.activities.ReserveSelectedRide;
-import com.example.unicar.activities.SelectDateActivity;
 
 public class MainActivity extends AppCompatActivity {
 
