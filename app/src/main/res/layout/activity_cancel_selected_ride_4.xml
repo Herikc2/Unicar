@@ -364,7 +364,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#3F51B5"
-            android:onClick="next"
             android:text="Cancelar"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
