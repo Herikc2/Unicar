@@ -17,7 +17,7 @@ public class SelectDateActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activit_select_date_20);
+        setContentView(R.layout.activity_select_date_20);
 
         calendar = findViewById(R.id.calendarView);
     }
