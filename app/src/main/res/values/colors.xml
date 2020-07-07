@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="black">#000000</color>
+    <color name="initial_blue">#2E519F</color>
     <color name="backgroundLogin">#FFFFFF</color>
     <color name="ButtonLogin">#FFFFFF</color>
     <color name="LoginTextInputHintBG">#808080</color>

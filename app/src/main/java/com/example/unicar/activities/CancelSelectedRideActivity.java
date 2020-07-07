@@ -6,7 +6,6 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.unicar.MainActivity;
 import com.example.unicar.R;
 
 public class CancelSelectedRideActivity extends AppCompatActivity {
@@ -17,14 +16,8 @@ public class CancelSelectedRideActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cancel_selected_ride_4);
     }
 
-    public void next(View v){
-        Intent i = new Intent(CancelSelectedRideActivity.this, MainActivity.class);
-        startActivity(i);
-    }
-
     public void back(View v){
-        Intent i = new Intent(CancelSelectedRideActivity.this, MainActivity.class);
+        Intent i = new Intent(CancelSelectedRideActivity.this, CancelReservationActivity.class);
         startActivity(i);
     }
-
 }

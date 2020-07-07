@@ -22,6 +22,11 @@ public class ReserveSelectedRide extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void reserve(View v){
+        Intent i = new Intent(ReserveSelectedRide.this, MainActivity.class);
+        startActivity(i);
+    }
+
     public void back(View v){
         Intent i = new Intent(ReserveSelectedRide.this, MainActivity.class);
         startActivity(i);

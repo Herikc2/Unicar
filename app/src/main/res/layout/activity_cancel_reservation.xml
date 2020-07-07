@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CancelReservationActivity"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.example.unicar.TopBarBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_top_bar_back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal"
+        android:text="Por quê?"
+        android:textColor="#000"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/HistoryCardViewWidth"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardElevation="@dimen/HistoryCardViewElevation"
+        app:cardCornerRadius="@dimen/HistoryCardViewRadius"
+        app:cardBackgroundColor="#EBEBEB"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="@dimen/HistoryCardViewMarginBottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/HistoryCardViewTextHourMarginLeft"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:text="Imprevisto.\nFiquei doente.\nApareceu uma festinha.
+                \nNão me senti segura(o)."
+                android:textAlignment="textStart"
+                android:textColor="#9A9FA4"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/reservation_cancel"
+            android:layout_width="175dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/button_blue_effect"
+            android:text="Cancelar carona"
+            android:onClick="backToMenu"
+            android:textAllCaps="false"
+            android:textColor="@color/ButtonLogin"
+            android:textSize="@dimen/LoginTextSizeButton" />
+</LinearLayout>
