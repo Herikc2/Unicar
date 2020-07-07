@@ -18,7 +18,7 @@ public class Reservation extends AppCompatActivity {
     }
 
     public void reservation(View view) {
-        Intent i = new Intent(Reservation.this, MainActivity.class);
+        Intent i = new Intent(Reservation.this, CancelSelectedRideActivity.class);
         startActivity(i);
     }
 }

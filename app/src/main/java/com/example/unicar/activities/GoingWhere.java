@@ -16,4 +16,9 @@ public class GoingWhere extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_going_where);
     }
+
+    public void chooseDate(View view) {
+        Intent i = new Intent(GoingWhere.this, SelectDateActivity.class);
+        startActivity(i);
+    }
 }

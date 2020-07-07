@@ -28,4 +28,9 @@ public class Location extends AppCompatActivity {
         Intent i = new Intent(Location.this, HowManyUsersActivity.class);
         startActivity(i);
     }
+
+    public void locationSelect(View view) {
+        Intent i = new Intent(Location.this, ReserveSelectedRide.class);
+        startActivity(i);
+    }
 }

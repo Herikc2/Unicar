@@ -23,7 +23,7 @@ public class ReserveSelectedRide extends AppCompatActivity {
     }
 
     public void reserve(View v){
-        Intent i = new Intent(ReserveSelectedRide.this, MainActivity.class);
+        Intent i = new Intent(ReserveSelectedRide.this, PopUp2.class);
         startActivity(i);
     }
 

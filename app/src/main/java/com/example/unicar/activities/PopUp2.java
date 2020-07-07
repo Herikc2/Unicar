@@ -19,7 +19,7 @@ public class PopUp2 extends AppCompatActivity {
     }
 
     public void closePopUp2(View view) {
-        Intent i = new Intent(PopUp2.this, MainActivity.class);
+        Intent i = new Intent(PopUp2.this, MainMenu.class);
         startActivity(i);
     }
 }

@@ -16,4 +16,9 @@ public class LeavingWhere extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leaving_where);
     }
+
+    public void history(View view) {
+        Intent i = new Intent(LeavingWhere.this, Location.class);
+        startActivity(i);
+    }
 }

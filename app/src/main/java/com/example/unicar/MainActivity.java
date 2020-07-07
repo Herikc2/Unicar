@@ -21,6 +21,8 @@ import com.example.unicar.activities.HowManyPassengers;
 import com.example.unicar.activities.LeavingWhere;
 import com.example.unicar.activities.MainMenu;
 import com.example.unicar.activities.ProfileActivity;
+import com.example.unicar.activities.Reservation;
+import com.example.unicar.activities.ReserveSelectedRide;
 import com.example.unicar.activities.SelectDateActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -45,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         //animationSplash();
 
         // Descomentar para Teste de Layout
-        Intent i = new Intent(MainActivity.this, LeavingWhere.class);
+        Intent i = new Intent(MainActivity.this, MainMenu.class);
         startActivity(i);
     }
 
