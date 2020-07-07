@@ -2,6 +2,8 @@ package com.example.unicar.usuario;
 
 import android.os.AsyncTask;
 
+import com.example.unicar.MainActivity;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintStream;
@@ -22,7 +24,7 @@ public class PostHttpService extends AsyncTask<Void, Void, String> {
     @Override
     protected String doInBackground(Void... voids) {
         String jsonDeResposta = "false";
-        String sURL = "http://192.168.0.103:8080/UnicarWS/webresources/UnicarRoot/Usuario/inserir";
+        String sURL = "http://" + MainActivity.ip + ":8080/UnicarWS/webresources/UnicarRoot/Usuario/inserir";
 
         try {
             URL url = new URL(sURL);

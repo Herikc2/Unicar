@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -44,6 +45,8 @@ public class UserChooseHourActivity extends AppCompatActivity {
                     timeString = hour + ":" + minute;
 
                 button_time.setText(timeString);
+                Intent i = new Intent(UserChooseHourActivity.this, HowManyUsersActivity.class);
+                startActivity(i);
             }
         }, hour, minute, true);
         timePickerDialog.show();

@@ -2,6 +2,7 @@ package com.example.unicar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -36,6 +37,14 @@ public class AcceptValueActivity extends AppCompatActivity {
                 valueTrip.setText("R$ " + String.format("%.2f", operation("0")));
             }
         }));
+
+        valueTrip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(AcceptValueActivity.this, MessageToUserActivity.class);
+                startActivity(i);
+            }
+        });
     }
 
     public void subMoney(View v){

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.unicar.model.Address;
@@ -18,6 +19,7 @@ import java.util.concurrent.ExecutionException;
 public class MessageToUserActivity extends AppCompatActivity {
 
     private Button btnSendRide;
+    EditText messageToUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,7 @@ public class MessageToUserActivity extends AppCompatActivity {
         setContentView(R.layout.activity_message_to_user);
 
         btnSendRide = findViewById(R.id.send_ride);
+        messageToUser = findViewById(R.id.message_to_user_edit);
 
         btnSendRide.setOnClickListener(new View.OnClickListener() {
             @Override

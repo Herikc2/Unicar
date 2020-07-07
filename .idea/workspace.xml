@@ -6,33 +6,33 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c804f23-ab32-436b-8606-aabf70d33682" name="Default Changelist" comment="bottom bar fragment corrected">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/activities/WhatHourActivity.java" afterDir="false" />
+    <list default="true" id="5df67366-0c73-472a-8af8-948497345faa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unicar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Unicar.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/AcceptValueActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/AcceptValueActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/HowManyUsersActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/HowManyUsersActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/activities/CancelSelectedRideActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/activities/CancelSelectedRideActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/activities/LeavingWhere.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/activities/LeavingWhere.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/activities/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/activities/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/activities/ProfileActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/activities/ProfileActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/activities/RatingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/activities/RatingActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/activities/ReserveSelectedRide.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/activities/ReserveSelectedRideActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/activities/SeeProfileActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/activities/SeeProfileActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/activities/SelectDateActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/activities/SelectDateActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/activities/ShowTravelsSelectedWayActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/activities/ShowTravelsSelectedWayActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_reserve_selected_ride_21.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_reserve_selected_ride_21.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/MessageToUserActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/MessageToUserActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/TopBarBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/TopBarBack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/UserChooseHourActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/UserChooseHourActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/WantChargeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/WantChargeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/ride/PostHttpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/ride/PostHttpService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/usuario/GetHttpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/usuario/GetHttpService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/usuario/PostHttpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/usuario/PostHttpService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/usuario/PutHttpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/usuario/PutHttpService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_message_to_user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_message_to_user.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_want_charge.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_want_charge.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,7 +41,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_28" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="633626d3" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -180,7 +180,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3c804f23-ab32-436b-8606-aabf70d33682" name="Default Changelist" comment="" />
+      <changelist id="5df67366-0c73-472a-8af8-948497345faa" name="Default Changelist" comment="" />
       <created>1593024043064</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />

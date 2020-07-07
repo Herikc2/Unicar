@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageView logoSplash;
 
     private static final int SPLASH_TIMEOUT = 1000;
+    public static final String ip = "192.168.0.103";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         //animationSplash();
 
         // Descomentar para Teste de Layout
-        Intent i = new Intent(MainActivity.this, MainMenu.class);
+        Intent i = new Intent(MainActivity.this, UserChooseHourActivity.class);
         startActivity(i);
     }
 

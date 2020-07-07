@@ -1,5 +1,6 @@
 package com.example.unicar;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -28,6 +29,7 @@ public class TopBarBack extends Fragment{
         View view = inflater.inflate(R.layout.fragment_top_bar_back, container, false);
 
         backButton = view.findViewById(R.id.back_button_fragment);
+
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

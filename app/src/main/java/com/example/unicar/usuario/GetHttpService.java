@@ -2,6 +2,7 @@ package com.example.unicar.usuario;
 
 import android.os.AsyncTask;
 
+import com.example.unicar.MainActivity;
 import com.google.gson.Gson;
 
 import java.io.IOException;
@@ -23,7 +24,7 @@ public class GetHttpService extends AsyncTask<Void, Void, Usuario> {
     @Override
     protected Usuario doInBackground(Void... voids) {
         StringBuilder resposta = new StringBuilder();
-        String sURL = "http://192.168.0.103:8080/UnicarWS/webresources/UnicarRoot/Usuario/get/" + this.codigo_aluno;
+        String sURL = "http://" + MainActivity.ip + ":8080/UnicarWS/webresources/UnicarRoot/Usuario/get/" + this.codigo_aluno;
 
         try {
             URL url = new URL(sURL);
