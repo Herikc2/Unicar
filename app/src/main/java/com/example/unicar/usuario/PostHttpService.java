@@ -8,6 +8,7 @@ import java.io.PrintStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.UnknownHostException;
 import java.util.Scanner;
 
 public class PostHttpService extends AsyncTask<Void, Void, String> {
@@ -57,6 +58,8 @@ public class PostHttpService extends AsyncTask<Void, Void, String> {
             jsonDeResposta = new Scanner(connection.getInputStream()).next();
             connection.disconnect();
         } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch(UnknownHostException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
