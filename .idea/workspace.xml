@@ -6,16 +6,8 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c804f23-ab32-436b-8606-aabf70d33682" name="Default Changelist" comment="bottom bar fragment corrected">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/activities/CancelSelectedRideActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/activities/ProfileActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/activities/RatingActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/activities/ReserveSelectedRide.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/activities/SeeProfileActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/activities/SelectDateActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/activities/ShowTravelsSelectedWayActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/model/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/model/Ride.java" afterDir="false" />
+    <list default="true" id="3c804f23-ab32-436b-8606-aabf70d33682" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/ride/PostHttpService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
@@ -32,14 +24,11 @@
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activit_select_data.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activit_select_date_20.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_avaliacoes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_rating_23.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_cancelar_reserva_selecionada.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_cancel_selected_ride_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_mostrar_viagens_caminho_selecionado.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_show_travels_selected_way_17.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_perfil.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_profile_35.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_reservar_reserva_selecionada.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_reserve_selected_ride_21.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_ver_perfil.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_see_profile_22.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/MessageToUserActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/MessageToUserActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/usuario/GetHttpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/usuario/GetHttpService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/usuario/PostHttpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/usuario/PostHttpService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/usuario/PutHttpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/unicar/usuario/PutHttpService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_message_to_user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_message_to_user.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,7 +37,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_28" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="633626d3" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -91,7 +80,7 @@
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Windows\AndroidStudioProjects\Unicar\app\src\main\res\drawable-v24" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -100,7 +89,7 @@
     <key name="android.template.packageName">
       <recent name="com.example.unicar" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Windows\AndroidStudioProjects\Unicar\app\src\main\res\drawable-v24" />
     </key>
   </component>
@@ -292,7 +281,8 @@
     <MESSAGE value="Corrected Design and Animations in History Screen; Corrected the fragment back_button" />
     <MESSAGE value="Corrected PostHttpService" />
     <MESSAGE value="bottom bar fragment corrected" />
-    <option name="LAST_COMMIT_MESSAGE" value="bottom bar fragment corrected" />
+    <MESSAGE value="Created Connection with Ride and WS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Connection with Ride and WS" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -303,6 +293,4 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
-    </breakpoint-manager>
-  </component>
-</project>
+    </breakpoin
