@@ -25,6 +25,7 @@
                 android:layout_height="46dp"
                 android:layout_gravity="left"
                 android:layout_marginTop="20dp"
+                android:onClick="back"
                 app:srcCompat="?attr/actionModeCloseDrawable" />
 
             <TextView
@@ -165,6 +166,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="10dp"
+                android:onClick="next"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -361,6 +363,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#3F51B5"
+            android:onClick="reserve"
             android:text="Reservar"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
