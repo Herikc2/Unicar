@@ -17,7 +17,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_28" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="633626d3" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -60,7 +60,7 @@
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Windows\AndroidStudioProjects\Unicar\app\src\main\res\drawable-v24" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -69,7 +69,7 @@
     <key name="android.template.packageName">
       <recent name="com.example.unicar" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Windows\AndroidStudioProjects\Unicar\app\src\main\res\drawable-v24" />
     </key>
   </component>
@@ -261,7 +261,8 @@
     <MESSAGE value="Corrected Design and Animations in History Screen; Corrected the fragment back_button" />
     <MESSAGE value="Corrected PostHttpService" />
     <MESSAGE value="bottom bar fragment corrected" />
-    <option name="LAST_COMMIT_MESSAGE" value="bottom bar fragment corrected" />
+    <MESSAGE value="Created Connection with Ride and WS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Connection with Ride and WS" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -272,6 +273,4 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
-    </breakpoint-manager>
-  </component>
-</project>
+    </breakpoin

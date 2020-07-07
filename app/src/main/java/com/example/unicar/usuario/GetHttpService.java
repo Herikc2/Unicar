@@ -9,6 +9,7 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.UnknownHostException;
 import java.util.Scanner;
 
 public class GetHttpService extends AsyncTask<Void, Void, Usuario> {
@@ -42,6 +43,8 @@ public class GetHttpService extends AsyncTask<Void, Void, Usuario> {
 
             connection.disconnect();
         } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch(UnknownHostException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
