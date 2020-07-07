@@ -2,6 +2,7 @@ package com.example.unicar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -11,6 +12,7 @@ import android.widget.Spinner;
 public class HowManyUsersActivity extends AppCompatActivity {
 
     Spinner howManyUsers;
+    boolean first = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,13 @@ public class HowManyUsersActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String selectedItem = howManyUsers.getItemAtPosition(position).toString();
+                if(!first)
+                    first = true;
+                else {
+                    Intent i = new Intent(HowManyUsersActivity.this, WantChargeActivity.class);
+                    startActivity(i);
+                }
+
             }
 
             @Override

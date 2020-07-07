@@ -17,7 +17,7 @@ public class CancelSelectedRideActivity extends AppCompatActivity {
     }
 
     public void back(View v){
-        Intent i = new Intent(CancelSelectedRideActivity.this, CancelReservationActivity.class);
+        Intent i = new Intent(CancelSelectedRideActivity.this, Reservation.class);
         startActivity(i);
     }
 }

@@ -18,12 +18,11 @@ public class RatingActivity extends AppCompatActivity {
     }
 
     public void next(View v){
-        Intent i = new Intent(RatingActivity.this, MainActivity.class);
-        startActivity(i);
+
     }
 
     public void back(View v){
-        Intent i = new Intent(RatingActivity.this, MainActivity.class);
+        Intent i = new Intent(RatingActivity.this, SeeProfileActivity.class);
         startActivity(i);
     }
 

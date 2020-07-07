@@ -7,7 +7,6 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.unicar.HowManyUsersActivity;
-import com.example.unicar.MainActivity;
 import com.example.unicar.R;
 import com.example.unicar.UserChooseHourActivity;
 
@@ -30,7 +29,7 @@ public class Location extends AppCompatActivity {
     }
 
     public void locationSelect(View view) {
-        Intent i = new Intent(Location.this, ReserveSelectedRide.class);
+        Intent i = new Intent(Location.this, ReserveSelectedRideActivity.class);
         startActivity(i);
     }
 }

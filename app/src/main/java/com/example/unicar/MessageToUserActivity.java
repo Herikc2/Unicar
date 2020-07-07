@@ -2,11 +2,14 @@ package com.example.unicar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.unicar.activities.MainMenu;
 import com.example.unicar.model.Address;
 import com.example.unicar.model.Ride;
 import com.example.unicar.ride.PostHttpService;
@@ -18,6 +21,7 @@ import java.util.concurrent.ExecutionException;
 public class MessageToUserActivity extends AppCompatActivity {
 
     private Button btnSendRide;
+    EditText messageToUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +29,7 @@ public class MessageToUserActivity extends AppCompatActivity {
         setContentView(R.layout.activity_message_to_user);
 
         btnSendRide = findViewById(R.id.send_ride);
+        messageToUser = findViewById(R.id.message_to_user_edit);
 
         btnSendRide.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,12 +41,14 @@ public class MessageToUserActivity extends AppCompatActivity {
 
     private void signUpRide(){
         // Teste
-        Ride r = new Ride(new Address("3000", "514"), new Address("300", "200"), new Date(), 5, false, 0, "Ola");
+        Ride r = new Ride(LoginActivity.cod_user, new Address("3000", "514"), new Address("300", "200"), new Date(), 5, false, 0, "Ola");
         Gson g = new Gson();
 
         try {
             if (new PostHttpService(g.toJson(r)).execute().get().equals("true")) {
                 Toast.makeText(getApplicationContext(), "Carona Cadastrada com Sucesso", Toast.LENGTH_LONG).show();
+                Intent i = new Intent(MessageToUserActivity.this, MainMenu.class);
+                startActivity(i);
             }
         } catch (ExecutionException e) {
             e.printStackTrace();

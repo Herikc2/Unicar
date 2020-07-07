@@ -3,6 +3,8 @@ package com.example.unicar.ride;
 import android.os.AsyncTask;
 import android.widget.Toast;
 
+import com.example.unicar.MainActivity;
+
 import java.io.IOException;
 import java.io.PrintStream;
 import java.net.HttpURLConnection;
@@ -22,7 +24,7 @@ public class PostHttpService extends AsyncTask<Void, Void, String> {
     @Override
     protected String doInBackground(Void... voids) {
         String jsonDeResposta = "false";
-        String sURL = "http://192.168.0.103:8080/UnicarWS/webresources/UnicarRoot/Carona/inserir";
+        String sURL = "http://" + MainActivity.ip + ":8080/UnicarWS/webresources/UnicarRoot/Carona/inserir";
 
         try {
             URL url = new URL(sURL);

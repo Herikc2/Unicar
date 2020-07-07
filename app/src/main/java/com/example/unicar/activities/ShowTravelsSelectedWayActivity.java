@@ -18,12 +18,12 @@ public class ShowTravelsSelectedWayActivity extends AppCompatActivity {
     }
 
     public void next(View v){
-        Intent i = new Intent(ShowTravelsSelectedWayActivity.this, SeeProfileActivity.class);
+        Intent i = new Intent(ShowTravelsSelectedWayActivity.this, Location.class);
         startActivity(i);
     }
 
     public void back(View v){
-        Intent i = new Intent(ShowTravelsSelectedWayActivity.this, MainActivity.class);
+        Intent i = new Intent(ShowTravelsSelectedWayActivity.this, ReserveSelectedRideActivity.class);
         startActivity(i);
     }
 

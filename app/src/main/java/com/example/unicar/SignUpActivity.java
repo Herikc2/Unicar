@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.unicar.activities.MainMenu;
 import com.example.unicar.usuario.GetHttpService;
 import com.example.unicar.usuario.PostHttpService;
 import com.example.unicar.usuario.Usuario;
@@ -82,7 +83,8 @@ public class SignUpActivity extends AppCompatActivity {
 
             if(user_verify == null) {
                 if (new PostHttpService(g.toJson(user)).execute().get().equals("true")) {
-                    Intent i =  new Intent(SignUpActivity.this, HistoryActivity.class);
+                    LoginActivity.cod_user = SignCodigoEdit.getText().toString();
+                    Intent i =  new Intent(SignUpActivity.this, MainMenu.class);
                     startActivity(i);
                     Toast.makeText(getApplicationContext(), "Cadastrado com Sucesso", Toast.LENGTH_LONG).show();
                     SignUpActivity.this.finish();

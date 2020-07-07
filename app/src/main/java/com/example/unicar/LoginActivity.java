@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.unicar.activities.MainMenu;
 import com.example.unicar.usuario.GetHttpService;
 import com.example.unicar.usuario.Usuario;
 import com.google.android.material.textfield.TextInputEditText;
@@ -102,7 +103,7 @@ public class LoginActivity extends AppCompatActivity {
             else
                 if(user.getSenha().equals(LoginSenhaEdit.getText().toString())){
                     cod_user = LoginCodigoEdit.getText().toString();
-                    Intent i = new Intent(LoginActivity.this, HistoryActivity.class);
+                    Intent i = new Intent(LoginActivity.this, MainMenu.class);
                     startActivity(i);
                 }else{
                     Toast.makeText(getApplicationContext(), "Usuario ou senha incorretos", Toast.LENGTH_SHORT).show();

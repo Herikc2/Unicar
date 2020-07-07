@@ -3,6 +3,9 @@ package com.example.unicar.model;
 import java.util.Date;
 
 public class Ride {
+
+    private String id;
+    private String codigo_usuario;
     private Address start;
     private Address destination;
     private Date date;
@@ -19,6 +22,33 @@ public class Ride {
         this.paid = paid;
         this.cost = cost;
         this.message = message;
+    }
+
+    public Ride(String codigo_usuario, Address start, Address destination, Date date, int seatAmt, boolean paid, double cost, String message) {
+        this.codigo_usuario = codigo_usuario;
+        this.start = start;
+        this.destination = destination;
+        this.date = date;
+        this.seatAmt = seatAmt;
+        this.paid = paid;
+        this.cost = cost;
+        this.message = message;
+    }
+
+    public String getCodigo_usuario() {
+        return codigo_usuario;
+    }
+
+    public void setCodigo_usuario(String codigo_usuario) {
+        this.codigo_usuario = codigo_usuario;
+    }
+
+    public String getID() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public Address getStart() {
