@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.unicar.activities.LeavingWhere;
+
 public class WantChargeActivity extends AppCompatActivity {
 
     Button yesButton;
@@ -24,6 +26,8 @@ public class WantChargeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(WantChargeActivity.this, AcceptValueActivity.class);
+                //i.putExtra("paid", "yes");
+                LeavingWhere.ride.setPaid(true);
                 startActivity(i);
             }
         });
@@ -32,6 +36,8 @@ public class WantChargeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(WantChargeActivity.this, MessageToUserActivity.class);
+                //i.putExtra("paid", "no");
+                LeavingWhere.ride.setPaid(false);
                 startActivity(i);
             }
         });

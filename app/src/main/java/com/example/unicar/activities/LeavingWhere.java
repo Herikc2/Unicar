@@ -13,6 +13,7 @@ import com.example.unicar.model.Ride;
 
 public class LeavingWhere extends AppCompatActivity {
 
+    public static Ride ride;
     private TextView tvFrom;
 
     @Override
@@ -20,11 +21,15 @@ public class LeavingWhere extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leaving_where);
         tvFrom = findViewById(R.id.etFrom);
+
+        ride = new Ride();
     }
 
     public void history(View view) {
         Intent i = new Intent(LeavingWhere.this, GoingWhere.class);
-        i.putExtra("from", tvFrom.getText().toString());
+        //i.putExtra("from", tvFrom.getText().toString());
+        Address ad = new Address(tvFrom.getText().toString());
+        ride.setStart(ad);
         startActivity(i);
     }
 }

@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.unicar.MainActivity;
 import com.example.unicar.R;
+import com.example.unicar.model.Address;
 
 public class GoingWhere extends AppCompatActivity {
 
@@ -23,7 +24,9 @@ public class GoingWhere extends AppCompatActivity {
 
     public void chooseDate(View view) {
         Intent i = new Intent(GoingWhere.this, SelectDateActivity.class);
-        i.putExtra("to", etTo.getText().toString());
+        //i.putExtra("to", etTo.getText().toString());
+        Address ad = new Address(etTo.getText().toString());
+        LeavingWhere.ride.setDestination(ad);
         startActivity(i);
     }
 }

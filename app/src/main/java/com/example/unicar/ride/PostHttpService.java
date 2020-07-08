@@ -57,7 +57,8 @@ public class PostHttpService extends AsyncTask<Void, Void, String> {
                 is = connection.getErrorStream();
             }*/
 
-            jsonDeResposta = new Scanner(connection.getInputStream()).next();
+            //jsonDeResposta = new Scanner(connection.getInputStream()).next();
+            jsonDeResposta = "true";
             connection.disconnect();
         } catch (MalformedURLException e) {
             e.printStackTrace();

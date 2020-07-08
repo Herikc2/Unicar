@@ -6,9 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CalendarView;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.unicar.activities.LeavingWhere;
 import com.example.unicar.activities.MainMenu;
 import com.example.unicar.model.Address;
 import com.example.unicar.model.Ride;
@@ -40,8 +42,33 @@ public class MessageToUserActivity extends AppCompatActivity {
     }
 
     private void signUpRide(){
+        /*String paraOndeVai = extras.getString("to");
+        String deOndeSai = extras.getString("from");
+        String
+        String hora = extras.getString("time");
+        String numberUsers = extras.getString("numberUsers");
+        String value = extras.getString("value");
+        String paid = extras.getString("paid");
+        String msg = messageToUser.getText().toString();
+
+        boolean paidB = false;
+        if(paid.equals("yes"))
+            paidB = true;
+        else
+            paidB = false;
+
+        int cost = 0;
+        if(!paidB)
+            cost = 0;*/
+
+        String msg = messageToUser.getText().toString();
+        LeavingWhere.ride.setMessage(msg);
+
         // Teste
-        Ride r = new Ride(LoginActivity.cod_user, new Address("3000", "514"), new Address("300", "200"), new Date(), 5, false, 0, "Ola");
+        LoginActivity.cod_user = "316";
+        Address s = LeavingWhere.ride.getStart();
+        Address d = LeavingWhere.ride.getDestination();
+        Ride r = new Ride(LoginActivity.cod_user, s, d, LeavingWhere.ride.getDate(), LeavingWhere.ride.getSeatAmt(), LeavingWhere.ride.isPaid(), LeavingWhere.ride.getCost(), msg);
         Gson g = new Gson();
 
         try {

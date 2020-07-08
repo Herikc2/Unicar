@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TimePicker;
 
+import com.example.unicar.activities.LeavingWhere;
+
 import java.util.Calendar;
 
 public class UserChooseHourActivity extends AppCompatActivity {
@@ -46,7 +48,7 @@ public class UserChooseHourActivity extends AppCompatActivity {
 
                 button_time.setText(timeString);
                 Intent i = new Intent(UserChooseHourActivity.this, HowManyUsersActivity.class);
-                i.putExtra("time", timeString);
+                //i.putExtra("time", timeString);
                 startActivity(i);
             }
         }, hour, minute, true);

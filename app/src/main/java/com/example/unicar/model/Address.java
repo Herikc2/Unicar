@@ -2,13 +2,10 @@ package com.example.unicar.model;
 
 public class Address {
 
-    private String id;
     private String street;
-    private String number;
 
-    public Address(String street, String number) {
+    public Address(String street) {
         this.street = street;
-        this.number = number;
     }
 
     public String getStreet() {
@@ -19,19 +16,4 @@ public class Address {
         this.street = street;
     }
 
-    public String getNumber() {
-        return number;
-    }
-
-    public void setNumber(String number) {
-        this.number = number;
-    }
-
-    public String getID() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 }

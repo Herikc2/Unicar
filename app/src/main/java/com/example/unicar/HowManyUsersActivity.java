@@ -9,6 +9,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
+import com.example.unicar.activities.LeavingWhere;
+
 public class HowManyUsersActivity extends AppCompatActivity {
 
     Spinner howManyUsers;
@@ -32,6 +34,8 @@ public class HowManyUsersActivity extends AppCompatActivity {
                     first = true;
                 else {
                     Intent i = new Intent(HowManyUsersActivity.this, WantChargeActivity.class);
+                    //i.putExtra("numberUsers", selectedItem);
+                    LeavingWhere.ride.setSeatAmt(Integer.parseInt(selectedItem));
                     startActivity(i);
                 }
 

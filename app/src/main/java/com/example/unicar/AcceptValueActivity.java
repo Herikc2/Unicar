@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.unicar.activities.LeavingWhere;
+import com.example.unicar.model.Ride;
+
 public class AcceptValueActivity extends AppCompatActivity {
 
     ImageView subButton;
@@ -42,6 +45,8 @@ public class AcceptValueActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(AcceptValueActivity.this, MessageToUserActivity.class);
+                //i.putExtra("value", valueTrip.getText().toString());
+                LeavingWhere.ride.setCost(Double.parseDouble(valueTrip.getText().toString().substring(3).replace(',', '.')));
                 startActivity(i);
             }
         });
